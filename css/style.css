@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Innovation';
+    src: url(../fonts/innovation.woff);
+}
+
+:root {
+    
+    --fg-color-1: #ffeeea;
+    --fg-color-2: #c4aeb3;
+    --fg-color-3: #c39391;
+    --fg-color-4: #ae776a;
+    --fg-color-5: #a6614e;
+    
+    --bg-color-1: rgba(97, 96, 133, 0.5);
+    --bg-color-2: rgba(58, 76, 109, 0.6);
+    --bg-color-3: rgba(78, 73, 86, 0.7);
+    --bg-color-4: rgba(29, 59, 99, 0.8);
+    --bg-color-5: rgba(33, 53, 94, 0.9);
+
+    --dark-grey: #2f2f2f;
+    --grey: #6f6f6f; 
+
+    --glass-dark: rgba(24, 24, 24, 0.9);
+    --glass-lite: rgba(128, 128, 128, 0.6);
+
+    --header-height: 72px;
+
+    --delay-chain-1: 0.4s;
+    --delay-chain-2: calc(var(--delay-chain-1) * 2);
+    --delay-chain-3: calc(var(--delay-chain-2) * 3);
+    --delay-chain-4: calc(var(--delay-chain-3) * 4);
+    --delay-chain-5: calc(var(--delay-chain-4) * 5);
+
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-webkit-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@-moz-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@-webkit-keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-moz-keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-webkit-keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-moz-keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    background: linear-gradient(45deg, var(--bg-color-2), var(--bg-color-3), var(--fg-color-5), var(--dark-grey)), #000;
+    background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../images/innovation-bg-0.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: var(--fg-color-1);
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    padding-top: var(--header-height);
+}
+
+header {
+    background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
+    background-size: 200% 200%;
+    height: var(--header-height);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid var(--bg-color-4);
+    box-shadow: 2px 4px 6px var(--dark-grey);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    -webkit-animation: Gradient 15s ease infinite, fade-in .5s ease-in;
+	-moz-animation: Gradient 15s ease infinite, fade-in .5s ease-in;
+    animation: Gradient 15s ease infinite, fade-in .5s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Innovation';
+    clear: both;
+}
+
+h1 {
+    visibility: hidden;
+    cursor: default;
+    margin: 0 12px;
+    padding-top: 8px;
+    margin-left: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    text-shadow: -2px 2px 2px var(--bg-color-5);
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    margin: 0 0 16px 0;;
+    color: var(--fg-color-2);
+    font-size: 28px;
+}
+
+p { font-size: 20px; clear: both; }
+
+section {
+    visibility: hidden;
+    min-height: 60vh;
+    margin: 24px 24px 0 24px;
+    padding: 24px;
+    background: linear-gradient(to bottom right, var(--glass-dark), var(--glass-lite));
+    box-shadow: 6px 6px 12px #1f0a00;
+    border-top: 1px solid var(--fg-color-4);
+    border-left: 1px solid var(--fg-color-4);
+    border-right: 1px solid var(--fg-color-3);
+    border-bottom: 1px solid var(--fg-color-3);
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+section:nth-of-type(1) { 
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+section:nth-of-type(2) {     
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+section:nth-of-type(2) hr {     
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+section:nth-of-type(2) hr ~ * {     
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+section:nth-of-type(2) {     
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+section:nth-of-type(3) {     
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+section > ul {  margin: 24px 0; }
+
+section hr ~ * {
+    visibility: hidden;
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+hr {
+    visibility: hidden;
+    margin-bottom: 24px;
+    border-color: var(--fg-color-2);
+    -webkit-animation: fade-in .4s ease-in;
+    -moz-animation: fade-in .4s ease-in;
+    animation: fade-in .4s ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+section:last-of-type { margin-bottom: 32px; }
+
+footer {
+    width: 100%;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--fg-color-4);
+    background: linear-gradient(22deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
+}
+
+footer span:last-child { float: right; }
