@@ -1,0 +1,30 @@
+:root {
+    
+    --fg-color-1: #ffeeea;
+    --fg-color-2: #c4aeb3;
+    --fg-color-3: #c39391;
+    --fg-color-4: #ae776a;
+    --fg-color-5: #a6614e;
+    
+    --bg-color-1: rgba(97, 96, 133, 0.5);
+    --bg-color-2: rgba(58, 76, 109, 0.6);
+    --bg-color-3: rgba(78, 73, 86, 0.7);
+    --bg-color-4: rgba(29, 59, 99, 0.8);
+    --bg-color-5: rgba(33, 53, 94, 0.9);
+
+    --dark-grey: #2f2f2f;
+    --grey: #6f6f6f; 
+
+    --glass-dark: rgba(24, 24, 24, 0.9);
+    --glass-lite: rgba(128, 128, 128, 0.6);
+
+    --header-height: 72px;
+    --padding-base: 32px;
+
+    --delay-chain-1: 0.4s;
+    --delay-chain-2: calc(var(--delay-chain-1) * 2);
+    --delay-chain-3: calc(var(--delay-chain-2) * 3);
+    --delay-chain-4: calc(var(--delay-chain-3) * 4);
+    --delay-chain-5: calc(var(--delay-chain-4) * 5);
+
+}

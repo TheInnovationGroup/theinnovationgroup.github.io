@@ -24,6 +24,7 @@
     --glass-lite: rgba(128, 128, 128, 0.6);
 
     --header-height: 72px;
+    --padding-base: 32px;
 
     --delay-chain-1: 0.4s;
     --delay-chain-2: calc(var(--delay-chain-1) * 2);
@@ -31,13 +32,23 @@
     --delay-chain-4: calc(var(--delay-chain-3) * 4);
     --delay-chain-5: calc(var(--delay-chain-4) * 5);
 
+    --graph-bar-1: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-2: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-3: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-4: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
 }
 
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
+    }
+    20% {
+		background-position: 0% 50%
 	}
 	50% {
+		background-position: 100% 50%
+    }
+    80% {
 		background-position: 100% 50%
 	}
 	100% {
@@ -46,10 +57,16 @@
 }
 
 @-moz-keyframes Gradient {
-	0% {
+    0% {
+		background-position: 0% 50%
+    }
+    20% {
 		background-position: 0% 50%
 	}
 	50% {
+		background-position: 100% 50%
+    }
+    80% {
 		background-position: 100% 50%
 	}
 	100% {
@@ -58,15 +75,234 @@
 }
 
 @keyframes Gradient {
-	0% {
+    0% {
+		background-position: 0% 50%
+    }
+    20% {
 		background-position: 0% 50%
 	}
 	50% {
+		background-position: 100% 50%
+    }
+    80% {
 		background-position: 100% 50%
 	}
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+@keyframes Rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes Expansion {
+   
+    0% {
+        transform: translateX(0px);
+        height: 92px;
+        width: 92px;
+    }
+    50% {
+        transform: translateX(192px);
+        height: 48px;
+        width: 48px;
+    }
+    100% {
+        transform:  translateX(0px);
+        height: 92px;
+        width: 92px;
+    }
+}
+
+@keyframes GraphBar1 {
+
+    0% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+    23% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+    25% {
+        width: 64%;
+        background: var(--graph-bar-2);
+    }
+    48% {
+        width: 64%;
+        background: var(--graph-bar-2);
+    }
+    50% {
+        width: 74%;
+        background: var(--graph-bar-3);
+    }    
+    73% {
+        width: 74%;
+        background: var(--graph-bar-3);
+    }
+    75% {
+        width: 89%;
+        background: var(--graph-bar-4);
+    }
+    98% {
+        width: 89%;
+        background: var(--graph-bar-4);
+    }
+    100% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+}
+
+
+@keyframes GraphBar2 {
+
+    0% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+    23% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+    25% {
+        width: 76%;
+        background: var(--graph-bar-4);
+    }
+    48% {
+        width: 76%;
+        background: var(--graph-bar-4);
+    }
+    50% {
+        width: 26%;
+        background: var(--graph-bar-1);
+    }    
+    73% {
+        width: 26%;
+        background: var(--graph-bar-1);
+    }
+    75% {
+        width: 49%;
+        background: var(--graph-bar-3);
+    }
+    98% {
+        width: 49%;
+        background: var(--graph-bar-3);
+    }
+    100% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+}
+
+@keyframes GraphBar3 {
+
+    0% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+    23% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+    25% {
+        width: 46%;
+        background: var(--graph-bar-1);
+    }
+    48% {
+        width: 46%;
+        background: var(--graph-bar-1);
+    }
+    50% {
+        width: 56%;
+        background: var(--graph-bar-3);
+    }    
+    73% {
+        width: 56%;
+        background: var(--graph-bar-3);
+    }
+    75% {
+        width: 39%;
+        background: var(--graph-bar-2);
+    }
+    98% {
+        width: 39%;
+        background: var(--graph-bar-2);
+    }
+    100% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+}
+
+@keyframes GraphBar4 {
+
+    0% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+    23% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+    25% {
+        width: 26%;
+        background: var(--graph-bar-4);
+    }
+    48% {
+        width: 26%;
+        background: var(--graph-bar-4);
+    }
+    50% {
+        width: 56%;
+        background: var(--graph-bar-2);
+    }    
+    73% {
+        width: 56%;
+        background: var(--graph-bar-2);
+    }
+    75% {
+        width: 29%;
+        background: var(--graph-bar-1);
+    }
+    98% {
+        width: 29%;
+        background: var(--graph-bar-1);
+    }
+    100% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+}
+
+@keyframes GraphLabel {
+    0% {
+        color: var(--fg-color-2);
+    }
+    22% {
+        color: var(--fg-color-2);
+    }
+    25% {
+        color: var(--fg-color-4);
+    }
+    50% {
+        color: var(--fg-color-4);
+    }
+    75% {
+        color: var(--fg-color-4);
+    }
+    97% {
+        color: var(--fg-color-4);
+    }
+    100% {
+        color: var(--fg-color-2);
+    }
 }
 
 @-webkit-keyframes fade-in {
@@ -122,9 +358,9 @@ html, body {
 html { 
     background: linear-gradient(45deg, var(--bg-color-2), var(--bg-color-3), var(--fg-color-5), var(--dark-grey)), #000;
     background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
+	-webkit-animation: Gradient 32s ease infinite;
+	-moz-animation: Gradient 32s ease infinite;
+    animation: Gradient 32s ease infinite;
 }
 
 body {
@@ -139,11 +375,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     padding-top: var(--header-height);
+    -webkit-animation:  fade-in .6s ease-in;
+	-moz-animation:  fade-in .6s ease-in;
+    animation:  fade-in .6s ease-in;
 }
 
 header {
     background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
-    background-size: 200% 200%;
+    /* background-size: 200% 200%; */
     height: var(--header-height);
     position: fixed;
     width: 100%;
@@ -154,12 +393,12 @@ header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    -webkit-animation: Gradient 15s ease infinite, fade-in .5s ease-in;
-	-moz-animation: Gradient 15s ease infinite, fade-in .5s ease-in;
-    animation: Gradient 15s ease infinite, fade-in .5s ease-in;
+    -webkit-animation:  fade-in .5s ease-in;
+	-moz-animation:  fade-in .5s ease-in;
+    animation:  fade-in .5s ease-in;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: 'Innovation';
     clear: both;
 }
@@ -183,18 +422,26 @@ h1 {
 }
 
 h2 {
-    margin: 0 0 16px 0;;
+    margin: 0;
     color: var(--fg-color-2);
     font-size: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--fg-color-2);
 }
 
-p { font-size: 20px; clear: both; }
+p { 
+    font-size: 20px; 
+    clear: both;
+    text-shadow: 1px 1px 1px var(--bg-color-4);
+    margin: 0;
+    letter-spacing: 1.2px;
+}
 
 section {
     visibility: hidden;
     min-height: 60vh;
-    margin: 24px 24px 0 24px;
-    padding: 24px;
+    margin: var(--padding-base) var(--padding-base) 0 var(--padding-base);
+    padding: var(--padding-base);
     background: linear-gradient(to bottom right, var(--glass-dark), var(--glass-lite));
     box-shadow: 6px 6px 12px #1f0a00;
     border-top: 1px solid var(--fg-color-4);
@@ -205,6 +452,8 @@ section {
     -moz-animation: fade-in .5s ease-in;
     animation: fade-in .5s ease-in;
     animation-fill-mode: forwards;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 section:nth-of-type(1) { 
@@ -219,18 +468,6 @@ section:nth-of-type(2) {
     animation-delay: .4s;
 }
 
-section:nth-of-type(2) hr {     
-    -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
-    animation-delay: .5s;
-}
-
-section:nth-of-type(2) hr ~ * {     
-    -webkit-animation-delay: .6s;
-    -moz-animation-delay: .6s;
-    animation-delay: .6s;
-}
-
 section:nth-of-type(2) {     
     -webkit-animation-delay: .4s;
     -moz-animation-delay: .4s;
@@ -243,35 +480,213 @@ section:nth-of-type(3) {
     animation-delay: .6s;
 }
 
-section > ul {  margin: 24px 0; }
+section:last-of-type { margin-bottom: 32px; }
 
-section hr ~ * {
-    visibility: hidden;
-    -webkit-animation: fade-in .5s ease-in;
-    -moz-animation: fade-in .5s ease-in;
-    animation: fade-in .5s ease-in;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: .4s;
-    -moz-animation-delay: .4s;
-    animation-delay: .4s;
+section > div { 
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-hr {
-    visibility: hidden;
-    margin-bottom: 24px;
-    border-color: var(--fg-color-2);
-    -webkit-animation: fade-in .4s ease-in;
-    -moz-animation: fade-in .4s ease-in;
-    animation: fade-in .4s ease-in;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: .2s;
-    -moz-animation-delay: .2s;
+section:nth-of-type(odd) main, section:nth-of-type(even) aside { float: left; }
+section:nth-of-type(odd) aside, section:nth-of-type(even) main  { float: right; }
+
+section:nth-of-type(even) aside { padding-left: 3%; }
+
+main, aside { 
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+main { flex: .48; padding: 0 2%; }
+aside { flex: .4; }
+
+main ul {
+    margin: 0 0 0 12%;
+    list-style-type: circle;
+}
+
+main ul li {
+    font-size: 22px;
+    padding: 2px 0 2px 8px;
+    color: var(--fg-color-1);
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 3px var(--glass-dark);
+}
+
+.spinner {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.spinner > div {
+    position: absolute;
+    top: 38%;
+    right: 38%;
+    -webkit-animation: Rotation 6s linear infinite;
+    -moz-animation: Rotation 6s linear infinite;
+    animation: Rotation 6s linear infinite;
+}
+
+.spinner > div > div {
+    height: 92px;
+    width: 92px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.08), rgba(64, 64, 64, 0.2));
+    border-radius: 50%;
+    transition: transform .6s;
+    animation: Expansion 12s linear infinite;
     animation-delay: .2s;
 }
 
-section:last-of-type { margin-bottom: 32px; }
+.spinner > div:nth-child(1) {
+
+}
+
+.spinner > div:nth-child(1) > div {
+}
+
+.spinner > div:nth-child(2) {
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.spinner > div:nth-child(2) > div {
+    /* transform: translateX(calc(64px * 2)); */
+}
+
+.spinner > div:nth-child(3) {
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.spinner > div:nth-child(3) > div {
+    /* transform: translateX(calc(64px * 3)); */
+}
+
+.spinner > div:nth-child(4) {
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+.spinner > div:nth-child(4) > div {
+    /* transform: translateX(calc(64px * 3)); */
+}
+
+.spinner > div:nth-child(5) {
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+.spinner > div:nth-child(4) > div {
+    /* transform: translateX(calc(64px * 3)); */
+}
+
+.spinner > div:nth-child(6) {
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+    animation-delay: -5s;
+}
+
+.spinner > div:nth-child(4) > div {
+    /* transform: translateX(calc(64px * 3)); */
+}
+
+.spinner:hover > div > div {
+    /* width: 72px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, rgba(24, 0, 0, 0.1), rgba(64, 64, 64, 0.16));
+    transition: transform .6s, width .6s, height .6s;
+    transform: translateX(172px); */
+}
+
+.example-graph {
+    flex: .8;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.example-graph span {
+    flex: .14;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--glass-dark);
+}
+
+.example-graph span label {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--fg-color-1);
+    font-size: 14px;
+    text-shadow: 1px 1px 1px var(--bg-color-3);
+    -webkit-animation: GraphLabel 24s linear infinite;
+    -moz-animation: GraphLabel 24s linear infinite;
+    animation: GraphLabel 24s linear infinite;
+}
+
+
+.example-graph span label:nth-child(2) {
+    -webkit-animation-delay: -18s;
+    -moz-animation-delay: -18s;
+    animation-delay: -18s;
+}
+
+.example-graph span label:nth-child(3) {
+    -webkit-animation-delay: -12s;
+    -moz-animation-delay: -12s;
+    animation-delay: -12s;
+}
+
+.example-graph span label:nth-child(4) {
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.example-graph div {
+    flex: .2;
+    margin: 12px 0;
+    width: 0%;
+    border: 1px solid var(--bg-color-5);
+}
+
+
+.example-graph div:nth-of-type(1) {
+    -webkit-animation: GraphBar1 24s linear infinite;
+    -moz-animation: GraphBar1 24s linear infinite;
+    animation: GraphBar1 24s linear infinite;
+}
+
+.example-graph div:nth-of-type(2) {
+    -webkit-animation: GraphBar2 24s linear infinite;
+    -moz-animation: GraphBar2 24s linear infinite;
+    animation: GraphBar2 24s linear infinite;
+}
+
+.example-graph div:nth-of-type(3) {
+    -webkit-animation: GraphBar3 24s linear infinite;
+    -moz-animation: GraphBar3 24s linear infinite;
+    animation: GraphBar3 24s linear infinite;
+}
+
+.example-graph div:nth-of-type(4) {
+    -webkit-animation: GraphBar4 24s linear infinite;
+    -moz-animation: GraphBar4 24s linear infinite;
+    animation: GraphBar4 24s linear infinite;
+}
 
 footer {
+    font-family: 'Courier New', Courier, monospace;
     width: 100%;
     height: 32px;
     padding: 8px;
