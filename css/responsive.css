@@ -1,0 +1,108 @@
+@media screen and (max-width: 1200px) {
+    
+    p {
+        font-size: 18px;
+        letter-spacing: 1.1px;   
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    p {
+        font-size: 16px;
+        letter-spacing: 1.1px;   
+    }
+}
+
+@media screen and (max-width: 768px) { 
+ 
+    p {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+    }
+
+    main ul li { 
+        font-size: 15px;
+    }
+
+    section {
+        min-height: 68vh;
+        margin: calc(var(--padding-base) / 2);
+        margin: calc(var(--padding-base) / 2);
+    }
+
+    section:nth-of-type(even) aside {
+        padding-left: 0;
+        padding-right: 4%;
+    }
+
+    main {
+        padding: 0;
+        flex: .6;
+    }
+
+    aside {
+        flex: .4;
+    }
+
+    .example-graph span label {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    p {
+        font-size: 16px;
+        letter-spacing: 1.0px;   
+    }
+
+    section {
+        min-height: 72vh;
+        margin: calc(var(--padding-base) * .4);
+        padding: calc(var(--padding-base) * .6);
+    }
+
+    section:not(:first-of-type) div {
+        flex-flow: column nowrap;
+    }
+
+    section:not(:first-of-type) aside {
+        padding: 6% 0 0 0;
+        width: 100%;
+        flex: .4;
+    }
+
+    section:not(:first-of-type) main {
+        padding: 0 4%;
+        flex: .6;
+    }
+
+    aside {
+        flex: .1;
+    }
+
+    main {
+        flex: .9;
+    }
+
+    main ul {
+        margin: 0 0 0 4%;
+    }
+}

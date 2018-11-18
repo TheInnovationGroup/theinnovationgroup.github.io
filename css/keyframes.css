@@ -1,0 +1,620 @@
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+    }
+    20% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+    }
+    80% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+    0% {
+		background-position: 0% 50%
+    }
+    20% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+    }
+    80% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+    0% {
+		background-position: 0% 50%
+    }
+    20% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+    }
+    80% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes Expansion {
+   
+    0% {
+        transform: translateX(0px);
+        height: 92px;
+        width: 92px;
+    }
+    50% {
+        transform: translateX(192px);
+        height: 48px;
+        width: 48px;
+    }
+    100% {
+        transform:  translateX(0px);
+        height: 92px;
+        width: 92px;
+    }
+}
+
+@keyframes GraphBar1 {
+
+    0% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+    24% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+    25% {
+        width: 64%;
+        background: var(--graph-bar-2);
+    }
+    49% {
+        width: 64%;
+        background: var(--graph-bar-2);
+    }
+    50% {
+        width: 74%;
+        background: var(--graph-bar-3);
+    }    
+    74% { 
+        width: 74%;
+        background: var(--graph-bar-3);
+    }
+    75% {
+        width: 89%;
+        background: var(--graph-bar-4);
+    }
+    99% {
+        width: 89%;
+        background: var(--graph-bar-4);
+    }
+    100% {
+        width: 52%;
+        background: var(--graph-bar-1);
+    }
+}
+
+@keyframes GraphBar2 {
+
+    0% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+    24% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+    25% {
+        width: 76%;
+        background: var(--graph-bar-4);
+    }
+    49% {
+        width: 76%;
+        background: var(--graph-bar-4);
+    }
+    50% {
+        width: 26%;
+        background: var(--graph-bar-1);
+    }    
+    74% { 
+        width: 26%;
+        background: var(--graph-bar-1);
+    }
+    75% {
+        width: 49%;
+        background: var(--graph-bar-3);
+    }
+    99% {
+        width: 49%;
+        background: var(--graph-bar-3);
+    }
+    100% {
+        width: 32%;
+        background: var(--graph-bar-2);
+    }
+}
+
+@keyframes GraphBar3 {
+
+    0% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+    24% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+    25% {
+        width: 46%;
+        background: var(--graph-bar-1);
+    }
+    49% {
+        width: 46%;
+        background: var(--graph-bar-1);
+    }
+    50% {
+        width: 76%;
+        background: var(--graph-bar-3);
+    }    
+    74% { 
+        width: 76%;
+        background: var(--graph-bar-3);
+    }
+    75% {
+        width: 39%;
+        background: var(--graph-bar-2);
+    }
+    99% {
+        width: 39%;
+        background: var(--graph-bar-2);
+    }
+    100% {
+        width: 80%;
+        background: var(--graph-bar-4);
+    }
+}
+
+@keyframes GraphBar4 {
+
+    0% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+    24% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+    25% {
+        width: 26%;
+        background: var(--graph-bar-4);
+    }
+    49% {
+        width: 26%;
+        background: var(--graph-bar-4);
+    }
+    50% {
+        width: 56%;
+        background: var(--graph-bar-2);
+    }    
+    74% { 
+        width: 56%;
+        background: var(--graph-bar-2);
+    }
+    75% {
+        width: 29%;
+        background: var(--graph-bar-1);
+    }
+    99% {
+        width: 29%;
+        background: var(--graph-bar-1);
+    }
+    100% {
+        width: 72%;
+        background: var(--graph-bar-3);
+    }
+}
+
+@keyframes GraphLabel {
+    0% {
+        color: var(--fg-color-2);
+    }
+    22% {
+        color: var(--fg-color-2);
+    }
+    25% {
+        color: var(--fg-color-4);
+    }
+    50% {
+        color: var(--fg-color-4);
+    }
+    75% {
+        color: var(--fg-color-4);
+    }
+    97% {
+        color: var(--fg-color-4);
+    }
+    100% {
+        color: var(--fg-color-2);
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@-moz-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@-webkit-keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-moz-keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes expand-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-webkit-keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@-moz-keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes slide-in {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes example-schema-1 {
+    0% {
+        opacity: 0;
+        width: 100%;
+    }
+    2% {
+        opacity: 1;
+    }
+    19% {
+        width: 100%;
+    }
+    20% {
+        width: 40%;;
+    }
+    50% {
+        width: 40%;
+    }
+    99% {
+        width: 40%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+
+@keyframes example-schema-1-text {
+    0% { opacity: 0; }
+    14% { opacity: 0; }
+    16% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-1-hr {
+    0% {
+        opacity: 0;;
+        width: 0%;
+    }
+    20% {
+        width: 0%;
+    }
+    22% {
+        opacity: 1;
+        width: 18%;
+    }
+    50% {
+        width: 18%;
+    }
+    99% {
+        opacity: 1;
+        width: 18%;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-2 {
+    0% {
+        opacity: 0;
+        height: 0;
+        width: 0%;
+    }
+    23% {
+        opacity: 0;
+        height: 0;
+        width: 0%;
+    }
+    24% {
+        opacity: 1;
+        height: 100%;
+        width: 40%;
+    }
+    50% {
+        height: 100%;
+        width: 40%;
+    }
+    99% {
+        opacity: 1;
+        height: 100%;
+        width: 40%;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-2-text {
+    0% { opacity: 0; }
+    24% { opacity: 0; }
+    26% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-3 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    28% {
+        opacity: 0;
+        width: 0%;
+    }
+    30% {
+        opacity: 1;
+        width: 28%;
+    }
+    50% {
+        width: 28%;
+    }
+    99% {
+        opacity: 1;
+        width: 28%;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-3-text {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+    32% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-3-hr {
+    0% {
+        opacity: 0;;
+        width: 0%;
+    }
+    30% {
+        width: 0%;
+    }
+    32% {
+        opacity: 1;
+        width: 6%
+    }
+    50% {
+        width: 6%
+    }
+    99% {
+        opacity: 1;
+        width: 6%
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-3-text {
+    0% { opacity: 0; }
+    34% { opacity: 0; }
+    36% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-4 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    34% {
+        opacity: 0;
+        width: 0%;
+    }
+    36% {
+        opacity: 1;
+        width: 28%;
+    }
+    50% {
+        width: 28%;
+    }
+    99% {
+        opacity: 1;
+        width: 28%;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-4-text {
+    0% { opacity: 0; }
+    38% { opacity: 0; }
+    40% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-4-hr {
+    0% {
+        opacity: 0;;
+        width: 0%;
+    }
+    38% {
+        width: 0%;
+    }
+    40% {
+        opacity: 1;
+        width: 6%
+    }
+    50% {
+        width: 6%
+    }
+    99% {
+        opacity: 1;
+        width: 6%
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-5 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    40% {
+        opacity: 0;
+        width: 0%;
+    }
+    42% {
+        opacity: 1;
+        width: 28%;
+    }
+    99% {
+        opacity: 1;
+        width: 28%;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes example-schema-5-text {
+    0% { opacity: 0; }
+    42% { opacity: 0; }
+    44% { opacity: 1; }
+    99% { opacity: 1 }
+    100% { opacity: 0; }
+}
+
+@keyframes example-schema-upper-span {
+    0% {
+        font-size: 14px;
+        height: 100%;
+    }
+    18% {
+        font-size: 14px;
+        height: 100%;
+    }
+    20% {
+        font-size: 12px;
+        height: 44%
+    }
+    50% {
+       height: 44%
+    }
+    99% {
+        font-size: 12px;
+        height: 44%
+    }
+    100% {
+        font-size: 14px;
+        height: 100%;
+    }
+}
+
+@keyframes example-schema-lower-span {
+    0% {
+        font-size: 14px;
+        height: 0%;
+    }
+    20% {
+        font-size: 14px;
+        height: 0%;
+    }
+    22% {
+        font-size: 12px;
+        height: 44%
+    }
+    50% {
+        height: 44%
+    }
+    99% {
+        font-size: 12px;
+        height: 44%
+    }
+    100% {
+        font-size: 14px;
+        height: 0%;
+    }
+}

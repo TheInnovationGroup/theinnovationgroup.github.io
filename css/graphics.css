@@ -1,0 +1,270 @@
+.spinner {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.spinner > div {
+    position: absolute;
+    top: 38%;
+    right: 38%;
+    -webkit-animation: Rotation 6s linear infinite;
+    -moz-animation: Rotation 6s linear infinite;
+    animation: Rotation 6s linear infinite;
+}
+
+.spinner > div > div {
+    height: 92px;
+    width: 92px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.08), rgba(64, 64, 64, 0.2));
+    border-radius: 50%;
+    transition: transform .6s;
+    animation: Expansion 12s linear infinite;
+    animation-delay: .2s;
+}
+
+.spinner > div:nth-child(2) {
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.spinner > div:nth-child(3) {
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.spinner > div:nth-child(4) {
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+.spinner > div:nth-child(5) {
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+.spinner > div:nth-child(6) {
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+    animation-delay: -5s;
+}
+
+.example-graph {
+    flex: .8;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.example-graph span {
+    flex: .14;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--glass-dark);
+}
+
+.example-graph span label {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--fg-color-1);
+    font-size: 14px;
+    text-shadow: 1px 1px 1px var(--bg-color-3);
+    -webkit-animation: GraphLabel var(--graph-speed) linear infinite;
+    -moz-animation: GraphLabel var(--graph-speed) linear infinite;
+    animation: GraphLabel var(--graph-speed) linear infinite;
+}
+
+.example-graph span label:nth-child(2) {
+    -webkit-animation-delay: -18s;
+    -moz-animation-delay: -18s;
+    animation-delay: -18s;
+}
+
+.example-graph span label:nth-child(3) {
+    -webkit-animation-delay: -12s;
+    -moz-animation-delay: -12s;
+    animation-delay: -12s;
+}
+
+.example-graph span label:nth-child(4) {
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.example-graph div {
+    flex: .2;
+    margin: 12px 0;
+    width: 0%;
+    border: 1px solid var(--bg-color-5);
+    box-shadow: 1px 1px 2px var(--glass-dark);
+}
+
+.example-graph div:nth-of-type(1) {
+    -webkit-animation: GraphBar1 var(--graph-speed) linear infinite;
+    -moz-animation: GraphBar1 var(--graph-speed) linear infinite;
+    animation: GraphBar1 var(--graph-speed) linear infinite;
+}
+
+.example-graph div:nth-of-type(2) {
+    -webkit-animation: GraphBar2 var(--graph-speed) linear infinite;
+    -moz-animation: GraphBar2 var(--graph-speed) linear infinite;
+    animation: GraphBar2 var(--graph-speed) linear infinite;
+}
+
+.example-graph div:nth-of-type(3) {
+    -webkit-animation: GraphBar3 var(--graph-speed) linear infinite;
+    -moz-animation: GraphBar3 var(--graph-speed) linear infinite;
+    animation: GraphBar3 var(--graph-speed) linear infinite;
+}
+
+.example-graph div:nth-of-type(4) {
+    -webkit-animation: GraphBar4 var(--graph-speed) linear infinite;
+    -moz-animation: GraphBar4 var(--graph-speed) linear infinite;
+    animation: GraphBar4 var(--graph-speed) linear infinite;
+}
+
+.example-schema {
+    flex: .8;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.example-schema > span {
+    /* flex: .46; */
+    /* height: 50%; */
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch; */
+    
+}
+
+.example-schema > span > div {
+    opacity: 0;
+    padding: 4%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--glass-dark);
+    background: linear-gradient(36deg, var(--glass-lite), var(--bg-color-3));
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.1px;
+}
+
+.example-schema > span > div > label {
+    padding: 3% 0;
+    margin: 0 4% 2% 4%;
+    display: inline-block;
+    color: var(--fg-color-2);
+    text-shadow: 1px 1px 1px var(--glass-dark);
+    border-bottom: 1px solid var(--fg-color-2);
+}
+
+.example-schema > span > div > ul {
+    list-style-type: none;
+    padding-left: 10%;
+    opacity: 0;
+}
+
+.example-schema > span > div > ul > li {
+    color: var(--fg-color-1);
+    text-shadow: 1px 1px 1px var(--glass-dark);
+}
+
+.example-schema > span > hr {
+    opacity: 0;
+    height: 1px;
+    margin: auto;
+    border-color: var(--fg-color-3);
+    border-width: 1px;
+    width: 12%;
+    float: left;
+    top: 50%;
+    position: relative;
+}
+
+.example-schema > span:nth-of-type(1) {
+    animation: example-schema-upper-span var(--schema-props);
+    height: 100%;
+}
+
+.example-schema > span:nth-of-type(1) > div {
+    width: 40%;
+}
+
+.example-schema > span:nth-of-type(1) > div:nth-of-type(1) {
+    animation: example-schema-1 var(--schema-props);
+    opacity: 1;
+}
+
+.example-schema > span:nth-of-type(1) > div:nth-of-type(2) {
+    animation: example-schema-2 var(--schema-props);
+}
+
+
+.example-schema > span:nth-of-type(1) > div:nth-of-type(1) > ul {
+    animation: example-schema-1-text var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(1) > div:nth-of-type(2) > ul {
+    animation: example-schema-2-text var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(1) > ul {
+    animation: example-schema-3-text var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(2) > ul {
+    animation: example-schema-4-text var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(3) > ul {
+    animation: example-schema-5-text var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(1) > hr {
+    animation: example-schema-1-hr var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) {
+    height: 0%;
+    animation: example-schema-lower-span var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div {
+    width: 28%;
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(1) {
+    animation: example-schema-3 var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(2) {
+    animation: example-schema-4 var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > div:nth-of-type(3) {
+    animation: example-schema-5 var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > hr {
+    width: 8%;
+}
+
+.example-schema > span:nth-of-type(2) > hr:nth-of-type(1) {
+    animation: example-schema-3-hr var(--schema-props);
+}
+
+.example-schema > span:nth-of-type(2) > hr:nth-of-type(2) {
+    animation: example-schema-4-hr var(--schema-props);
+}

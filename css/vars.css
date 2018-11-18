@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Innovation';
+    src: url(../fonts/innovation.woff);
+}
+
 :root {
     
     --fg-color-1: #ffeeea;
@@ -16,7 +21,7 @@
     --grey: #6f6f6f; 
 
     --glass-dark: rgba(24, 24, 24, 0.9);
-    --glass-lite: rgba(128, 128, 128, 0.6);
+    --glass-lite: rgba(96, 96, 96, 0.6);
 
     --header-height: 72px;
     --padding-base: 32px;
@@ -27,4 +32,26 @@
     --delay-chain-4: calc(var(--delay-chain-3) * 4);
     --delay-chain-5: calc(var(--delay-chain-4) * 5);
 
+    --graph-bar-1: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-2: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-3: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+    --graph-bar-4: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
+
+    --graph-speed: 24s;
+
+    --schema-speed: 12s;
+    --schema-props: var(--schema-speed) linear infinite forwards;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background: linear-gradient(36deg, var(--bg-color-3), var(--fg-color-4));
 }
