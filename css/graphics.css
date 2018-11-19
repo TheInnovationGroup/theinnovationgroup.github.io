@@ -185,9 +185,8 @@
     opacity: 0;
     height: 1px;
     margin: auto;
-    border-color: var(--fg-color-3);
+    border-color: var(--fg-color-7);
     border-width: 1px;
-    width: 12%;
     float: left;
     top: 50%;
     position: relative;
@@ -267,4 +266,213 @@
 
 .example-schema > span:nth-of-type(2) > hr:nth-of-type(2) {
     animation: example-schema-4-hr var(--schema-props);
+}
+
+.example-app {
+    flex: .28;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: flex-end;
+}
+
+.example-app > div {
+    border: 1px solid var(--glass-lite);
+    flex: .3;
+    box-shadow: 2px 2px 4px var(--glass-dark);
+}
+
+.example-app > div:nth-child(1) {
+    height: 100%;
+    flex: .44;
+}
+.example-app > div:nth-child(2) { 
+    flex: .32;
+    height: 80%;
+}
+.example-app > div:nth-child(3) { 
+    flex: .14;
+    height: 80%;
+}
+
+.example-app > div > div {
+    font-size: 10px;
+    color: var(--fg-color-2);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, var(--glass-lite), rgba(32, 32, 32, 0.6));
+    border: 4px solid var(--bg-color-2);
+    padding: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.example-app > div > div > span {
+    flex: .2;
+}
+
+.example-app .spinner {
+    flex: .4;
+    width: 50%;
+}
+
+.example-app .spinner > div {
+    top: 32%;
+    right: 44%;
+}
+
+.example-app .spinner > div > div {
+    animation: ExpansionMini 12s linear infinite;
+    border: 1px solid var(--fg-color-8);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.08), rgba(64, 32, 64, 0.16));
+}
+
+.example-app .example-graph {
+    flex: .5;
+}
+
+.example-app .example-graph span {
+    flex: .1;
+    margin-bottom: 2px;
+}
+
+.example-app .example-graph div {
+    flex: .2;
+    margin: 4px 0;
+}
+
+.example-app .example-schema {
+    flex: 1;
+    font-size: 2px;
+}
+
+.example-app .example-schema, .example-app .example-schema * {
+    /* animation-delay: 2s; */
+}
+
+.example-app .example-schema > span {
+    width: 100%;
+    font-size: 2px;
+}
+
+.example-app .example-schema > span > div {
+    /* margin: 0 -1px; */
+}
+
+.example-app .example-schema > span > div label {
+    padding: 2px 0;
+    line-height: 12px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--fg-color-6);
+}
+
+.example-app .example-schema > span > hr {
+    margin: 0 -1px;
+    top: 32%;
+}
+
+.example-code {
+    flex: .6;
+    overflow: hidden;
+}
+
+.example-code ol {
+    list-style-type: none;
+    counter-reset: li;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.1px;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 0;
+}
+
+.example-code ol li {
+    counter-increment: li;
+}
+
+.example-code ol li:before {
+    content: counter(li);
+    display: inline-block;
+    width: 2em;
+    color: var(--fg-color-3);
+}
+
+.example-code ol li[data-indent="2"] > :first-child {
+    padding-left: var(--code-indent);
+}
+.example-code ol li[data-indent="3"] > :first-child {
+    padding-left: calc(var(--code-indent) * 2);
+}
+.example-code ol li[data-indent="4"] > :first-child {
+    padding-left: calc(var(--code-indent) * 3);
+}
+
+.example-code ol li em {
+    color: var(--code-keyword);
+}
+
+.example-code ol li b {
+    color: var(--code-name);
+}
+
+.example-code ol li span {
+    color: var(--code-param);
+    padding: 0;
+}
+
+.example-code ol li:nth-child(15) ~ li {
+    visibility: hidden;
+    height: 0px;
+}
+
+.example-code ol li:nth-child(1) {
+    animation: 8s code-editor-li-1 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 2s; */
+}
+
+.example-code ol li:nth-child(2) {
+    animation: 8s code-editor-li-2 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 1s; */
+}
+
+.example-code ol li:nth-child(3) {
+    animation: 8s code-editor-li-3 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 2s; */
+}
+
+.example-code ol li:nth-child(4) {
+    animation: 8s code-editor-li-4 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 3s; */
+}
+
+.example-code ol li:nth-child(16) {
+    animation: 8s code-editor-li-16 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 8s; */
+}
+
+.example-code ol li:nth-child(17) {
+    animation: 8s code-editor-li-17 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 9s; */
+}
+
+.example-code ol li:nth-child(18) {
+    animation: 8s code-editor-li-18 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 8s; */
+}
+
+.example-code ol li:nth-child(19) {
+    animation: 8s code-editor-li-19 linear infinite forwards;
+    animation-delay: 2s;
+    /* animation-delay: 9s; */
 }

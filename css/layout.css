@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html { 
@@ -92,7 +94,7 @@ p {
 
 section {
     visibility: hidden;
-    min-height: 60vh;
+    min-height: 62vh;
     margin: var(--padding-base) var(--padding-base) 0 var(--padding-base);
     padding: var(--padding-base);
     background: linear-gradient(to bottom right, var(--glass-dark), var(--glass-lite));
@@ -133,7 +135,7 @@ section:nth-of-type(4) {
     animation-delay: .8s;
 }
 
-section:last-of-type { margin-bottom: 32px; }
+section:last-of-type { margin-bottom: 64px; }
 
 section > div { 
     flex: 1;

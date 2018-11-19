@@ -10,6 +10,9 @@
     --fg-color-3: #c39391;
     --fg-color-4: #ae776a;
     --fg-color-5: #a6614e;
+    --fg-color-6: rgba(195, 147, 145, 0.7);
+    --fg-color-7: rgba(174, 119, 106, 0.7);
+    --fg-color-8: rgba(166, 97, 78, 0.7);
     
     --bg-color-1: rgba(97, 96, 133, 0.5);
     --bg-color-2: rgba(58, 76, 109, 0.6);
@@ -41,6 +44,12 @@
 
     --schema-speed: 12s;
     --schema-props: var(--schema-speed) linear infinite forwards;
+
+    --code-keyword: rgba(64, 192, 256, 0.8);
+    --code-name: rgba(256, 164, 128, 0.8);
+    --code-param: rgba(256, 128, 128, 0.8);
+
+    --code-indent: 14px;
 }
 
 ::-webkit-scrollbar-track {

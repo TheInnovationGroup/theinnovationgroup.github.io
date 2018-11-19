@@ -80,6 +80,25 @@
     }
 }
 
+@keyframes ExpansionMini {
+   
+    0% {
+        transform: translateX(4px);
+        height: 12px;
+        width: 12px;
+    }
+    50% {
+        transform: translateX(18px);
+        height: 24px;
+        width: 24px;
+    }
+    100% {
+        transform:  translateX(4px);
+        height: 12px;
+        width: 12px;
+    }
+}
+
 @keyframes GraphBar1 {
 
     0% {
@@ -336,7 +355,6 @@
     }
 }
 
-
 @keyframes example-schema-1-text {
     0% { opacity: 0; }
     14% { opacity: 0; }
@@ -347,10 +365,11 @@
 
 @keyframes example-schema-1-hr {
     0% {
-        opacity: 0;;
+        opacity: 0;
         width: 0%;
     }
     20% {
+        opacity: 0;
         width: 0%;
     }
     22% {
@@ -450,6 +469,7 @@
         width: 0%;
     }
     30% {
+        opacity: 0;
         width: 0%;
     }
     32% {
@@ -517,6 +537,7 @@
         width: 0%;
     }
     38% {
+        opacity: 0;
         width: 0%;
     }
     40% {
@@ -598,23 +619,207 @@
         font-size: 14px;
         height: 0%;
     }
-    20% {
+    26% {
         font-size: 14px;
         height: 0%;
     }
-    22% {
+    28% {
         font-size: 12px;
         height: 44%
     }
     50% {
         height: 44%
     }
-    99% {
+    98% {
         font-size: 12px;
         height: 44%
     }
-    100% {
+    99% {
         font-size: 14px;
         height: 0%;
+    }
+}
+
+@keyframes code-editor-li-1 {
+    0% {
+        height: 14px;
+        visibility: visible;
+    }
+    11% {
+        height: 14px;
+        visibility: visible;
+    }
+    12% {
+        height: 0px;
+        visibility: hidden;
+    }
+    99% {
+        height: 0px;
+        visibility: hidden;
+    }
+    100% {
+        height: 14px;
+        visibility: visible;
+    }
+}
+
+@keyframes code-editor-li-2 {
+    0% {
+        height: 14px;
+        visibility: visible;
+    }
+    24% {
+        height: 14px;
+        visibility: visible;
+    }
+    25% {
+        height: 0px;
+        visibility: hidden;
+    }
+    87% {
+        height: 0px;
+        visibility: hidden;
+    }
+    88% {
+        height: 14px;
+        visibility: visible;
+    }
+}
+
+@keyframes code-editor-li-3 {
+    0% {
+        height: 14px;
+        visibility: visible;
+    }
+    37% {
+        height: 14px;
+        visibility: visible;
+    }
+    38% {
+        height: 0px;
+        visibility: hidden;
+    }
+    74% {
+        height: 0px;
+        visibility: hidden;
+    }
+    75% {
+        height: 14px;
+        visibility: visible;
+    }
+}
+
+@keyframes code-editor-li-4 {
+    0% {
+        height: 14px;
+        visibility: visible;
+    }
+    49% {
+        height: 14px;
+        visibility: visible;
+    }
+    50% {
+        height: 0px;
+        visibility: hidden;
+    }
+    62% {
+        height: 0px;
+        visibility: hidden;
+    }
+    63% {
+        height: 14px;
+        visibility: visible;
+    }
+}
+
+@keyframes code-editor-li-16 {
+    0% {
+        height: 0;
+        visibility: hidden;
+    }
+    11% {
+        height: 0;
+        visibility: hidden;
+    }
+    12% {
+        height: 14px;
+        visibility: visible;
+    }
+    99% {
+        height: 14px;
+        visibility: visible;
+    }
+    100% {
+        height: 0;
+        visibility: hidden ;
+    }
+}
+
+@keyframes code-editor-li-17 {
+    0% {
+        height: 0px;
+        visibility: hidden;
+    }
+    24% {
+        height: 0px;
+        visibility: hidden;
+    }
+    25% {
+        height: 14px;
+        visibility: visible;
+    }
+    87% {
+        height: 14px;
+        visibility: visible;
+    }
+    88% {
+        height: 0px;
+        visibility: hidden;
+    }
+}
+
+@keyframes code-editor-li-18 {
+    0% {
+        height: 0px;
+        visibility: hidden;
+    }
+    37% {
+        height: 0px;
+        visibility: hidden;
+    }
+    38% {
+        height: 14px;
+        visibility: visible;
+    }
+    74% {
+        height: 14px;
+        visibility: visible;
+    }
+    75% {
+        height: 0x;
+        visibility: hidden;
+    }
+}
+
+@keyframes code-editor-li-19 {
+    0% {
+        height: 0px;
+        visibility: hidden;
+    }
+    49% {
+        height: 0px;
+        visibility: hidden;
+    }
+    50% {
+        height: 14px;
+        visibility: visible;
+    }
+    62% {
+        height: 14px;
+        visibility: visible;
+    }
+    63% {
+        height: 0px;
+        visibility: hidden;
     }
 }
