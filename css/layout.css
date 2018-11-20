@@ -244,3 +244,8 @@ footer {
 }
 
 footer span:last-child { float: right; }
+
+footer a { 
+    color: var(--fg-color-2);
+    text-decoration: none; 
+}
