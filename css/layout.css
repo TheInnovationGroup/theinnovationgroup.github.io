@@ -32,7 +32,6 @@ body {
 
 header {
     background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
-    /* background-size: 200% 200%; */
     height: var(--header-height);
     position: fixed;
     width: 100%;
@@ -43,13 +42,44 @@ header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     -webkit-animation:  fade-in .5s ease-in;
 	-moz-animation:  fade-in .5s ease-in;
     animation:  fade-in .5s ease-in;
 }
 
-nav {
+header > a {
+    flex: .5;
+    text-decoration: none;
+    color: var(--fg-color-1);
+    display: block;
+}
+
+header > input { 
     display: none;
+}
+
+nav {
+    flex: .4;
+    padding-right: 12px;
+    text-align: right;
+}
+
+nav > a, nav > a:visited {
+    display: inline-block;
+    font-family: 'innovation';
+    font-size: 26px;
+    line-height: 72px;
+    letter-spacing: 1.1px;
+    padding: 0 6%;
+    color: var(--fg-color-2);
+    text-decoration: none;
+    text-shadow: 2px 2px 4px var(--glass-dark);
+}
+
+nav > a:hover {
+    color: var(--fg-color-3);
+    text-shadow: 2px 2px 4px var(--bg-color-1);
 }
 
 h1, h2 {
@@ -59,7 +89,6 @@ h1, h2 {
 
 h1 {
     visibility: hidden;
-    cursor: default;
     margin: 0 12px;
     padding-top: 8px;
     margin-left: 20px;
@@ -81,6 +110,16 @@ h2 {
     font-size: 28px;
     padding-bottom: 18px;
     border-bottom: 1px solid var(--fg-color-2);
+}
+
+h3 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+h3 ~ p {
+    margin-left: 2%;
 }
 
 p { 
@@ -157,6 +196,7 @@ main, aside {
 }
 
 main { flex: .48; padding: 0 2%; }
+main:only-child { flex: .8; }
 aside { flex: .4; }
 
 main ul {
@@ -170,6 +210,27 @@ main ul li {
     color: var(--fg-color-1);
     letter-spacing: 2px;
     text-shadow: 1px 2px 3px var(--glass-dark);
+}
+
+main span {
+    flex: .4;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly
+}
+
+main span * {
+    flex: .24
+}
+
+main > a {
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--fg-color-2);
+}
+
+main > a:hover {
+    color: var(--fg-color-3);
 }
 
 footer {

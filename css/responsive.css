@@ -23,14 +23,19 @@
 }
 
 @media screen and (max-width: 768px) { 
- 
+
+    h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 0 4%;
+    }
+
     p {
         font-size: 14px;
         letter-spacing: 1.1px;
-    }
-
-    main ul li { 
-        font-size: 15px;
     }
 
     section {
@@ -44,13 +49,17 @@
         padding-right: 4%;
     }
 
-    section:not(:first-of-type) main, section:not(:first-of-type) aside {
+    section:not(:first-of-type) main:not(:only-child), section:not(:first-of-type) aside {
         flex: .5;
     }
 
     main {
         padding: 0;
         flex: .6;
+    }
+
+    main ul li { 
+        font-size: 15px;
     }
 
     aside {
@@ -69,7 +78,7 @@
 @media screen and (max-width: 480px) {
     
     h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     h2 {
@@ -78,6 +87,65 @@
 
     header nav {
         display: none;
+        opacity: 0;
+        width: 0px;
+    }
+
+    header input {
+        -webkit-appearance: none;
+        cursor: pointer;
+        height: 48px;
+        width: 48px;
+        border: 3px solid var(--bg-color-5);
+        background: linear-gradient(36deg, var(--bg-color-2), var(--bg-color-3));
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 10px;
+        z-index: 11;
+    }
+
+    header input:before {
+        content: "≡";
+        font-size: 36px;
+        margin: auto;
+        margin-top: -4px;
+        color: var(--fg-color-2);
+    }
+
+    header input:checked {
+        border: 2px solid var(--fg-color-6);
+        background: linear-gradient(-36deg, var(--bg-color-4), var(--glass-dark));
+        transition: all .2s;
+    }
+
+    header input:checked + nav {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-top: 72px;
+        width: 32%;
+        height: 48%;
+        z-index: 10;
+        background: linear-gradient(36deg, var(--glass-dark), var(--bg-color-4));
+        transition: all .6s; 
+    }
+
+    header input:checked + nav > a {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+
+    header nav > a:nth-child(3) ~ {
+        display: none;
+    }
+
+    header a {
+        flex: .8;
     }
 
     p {
@@ -91,7 +159,7 @@
         padding: calc(var(--padding-base) * .6);
     }
 
-    section:not(:first-of-type) div {
+    section:not(:first-of-type) > div {
         flex-flow: column nowrap;
     }
 
@@ -115,6 +183,14 @@
     }
 
     main ul {
-        margin: 0 0 0 4%;
+        margin: 4% 0 4% 4%;
+    }
+
+    main ul li {
+        padding: 0;
+    }
+
+    .example-app {
+        padding: 0;
     }
 }
