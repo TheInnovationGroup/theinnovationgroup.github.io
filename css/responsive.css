@@ -20,9 +20,13 @@
     main ul li { 
         font-size: 18px;
     }
+
+    .example-code ol {
+        font-size: 10px;
+    }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 900px) {
 
     h1 {
         font-size: 28px;
@@ -32,6 +36,9 @@
         font-size: 22px;
         padding: 0 4%;
     }
+}
+
+@media screen and (max-width: 768px) { 
 
     p {
         font-size: 14px;
@@ -41,7 +48,7 @@
     section {
         min-height: 68vh;
         margin: calc(var(--padding-base) / 2);
-        margin: calc(var(--padding-base) / 2);
+        padding: calc(var(--padding-base) / 2);
     }
 
     section:nth-of-type(even) aside {
@@ -154,9 +161,13 @@
     }
 
     section {
-        min-height: 72vh;
+        min-height: 76vh;
         margin: calc(var(--padding-base) * .4);
         padding: calc(var(--padding-base) * .6);
+    }
+
+    section div main:only-child {
+        flex: 1;
     }
 
     section:not(:first-of-type) > div {
@@ -201,5 +212,24 @@
 
     .example-app {
         padding: 0;
+    }
+
+    .about { overflow: hidden; }
+
+    .about div {
+        flex-flow: column nowrap;
+    }
+
+    .about div main {
+        flex: .5;
+    }
+
+    .about div aside {
+        flex: .5;
+    }
+
+    .about div aside .i-coin span {
+        right: 30%;
+        top: auto;
     }
 }

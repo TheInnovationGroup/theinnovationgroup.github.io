@@ -476,3 +476,30 @@
     animation-delay: 2s;
     /* animation-delay: 9s; */
 }
+
+.i-coin {
+    flex: 1;
+}
+
+.i-coin span {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    box-sizing: border-box;
+    border: 3px solid var(--fg-color-1);
+    border-radius: 50%;
+    animation: 3s coin-spin linear infinite forwards;
+    box-shadow: 1px 1px 1px var(--glass-dark);
+    background: linear-gradient(36deg, rgba(0, 0, 0, 0.2), rgba(64, 64, 64, 0.3))
+}
+
+.i-coin span i {
+    font-style: normal;
+    font-weight: 300;
+    height: 128px;
+    width: 128px;
+    display: block;
+    text-align: center;
+    font-size: 112px;
+    text-shadow: 1px 1px 1px var(--glass-dark);
+}
