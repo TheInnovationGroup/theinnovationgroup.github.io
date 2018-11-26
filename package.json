@@ -1,0 +1,24 @@
+{
+  "name": "theinnovationgroup.github.io",
+  "version": "1.0.0",
+  "description": "The Innovation Group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheInnovationGroup/theinnovationgroup.github.io.git"
+  },
+  "author": "Kenneth Reilly @8_bit_hacker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheInnovationGroup/theinnovationgroup.github.io/issues"
+  },
+  "homepage": "https://github.com/TheInnovationGroup/theinnovationgroup.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1"
+  }
+}
