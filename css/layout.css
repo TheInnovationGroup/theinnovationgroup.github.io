@@ -249,3 +249,16 @@ footer a {
     color: var(--fg-color-2);
     text-decoration: none; 
 }
+
+.fb_iframe_widget {
+    flex: .4;
+}
+
+.fb_iframe_widget > span, .fb_iframe_widget > span > iframe {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.fb_iframe_widget iframe {
+    position: relative !important;
+}
