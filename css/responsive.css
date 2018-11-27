@@ -13,11 +13,11 @@
         letter-spacing: 1.1px;   
     }
 
-    main ul {
+    main > ul, aside > ul {
         margin: 0 0 0 8%;
     }
 
-    main ul li { 
+    main > ul li, aside > ul li { 
         font-size: 18px;
     }
 
@@ -65,7 +65,7 @@
         flex: .6;
     }
 
-    main ul li { 
+    main > ul li, aside > ul li { 
         font-size: 15px;
     }
 
@@ -175,14 +175,22 @@
     }
 
     section:not(:first-of-type) aside {
-        padding: 6% 0 0 0;
+        /* padding: 6% 0 0 0;
         width: 100%;
-        flex: .4;
+        flex: .4; 
+        padding: 4%;
+        flex: .6; */
     }
 
-    section:not(:first-of-type) main {
-        padding: 0 4%;
+    section:not(:first-of-type) main,   
+    section:not(:first-of-type) aside {
+        margin: 4% 4% 0 4%;
         flex: .6;
+    }
+
+    section:not(:first-of-type) main:not(:first-child) ,   
+    section:not(:first-of-type) aside:not(:first-child) {
+        margin-top: 0;
     }
 
     section:only-of-type > div {
@@ -202,11 +210,11 @@
         flex: .9;
     }
 
-    main ul {
+    main ul, aside ul {
         margin: 4% 0 4% 4%;
     }
 
-    main ul li {
+    main ul li, aside ul li {
         padding: 0;
     }
 

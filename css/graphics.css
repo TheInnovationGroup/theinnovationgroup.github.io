@@ -179,6 +179,8 @@
 .example-schema > span > div > ul > li {
     color: var(--fg-color-1);
     text-shadow: 1px 1px 1px var(--glass-dark);
+    font-size: 12px;
+    padding: 0px;
 }
 
 .example-schema > span > hr {
@@ -489,7 +491,7 @@
     border: 3px solid var(--fg-color-1);
     border-radius: 50%;
     animation: 3s coin-spin linear infinite forwards;
-    box-shadow: 1px 1px 1px var(--glass-dark);
+    box-shadow: 0px 2px 4px -2px var(--glass-dark);
     background: linear-gradient(36deg, rgba(0, 0, 0, 0.2), rgba(64, 64, 64, 0.3))
 }
 

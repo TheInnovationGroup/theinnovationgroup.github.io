@@ -39,8 +39,36 @@
         <h2>Contact</h2>
         <div>
             <main>
-                <a href="mailto:the-innovation-group@outlook.com">the-innovation-group@outlook.com</a>
-                <a href="tel:2089145239">208.914.5239</a>
+                <!-- <a href="mailto:the-innovation-group@outlook.com">the-innovation-group@outlook.com</a>
+                <a href="tel:2089145239">208.914.5239</a> -->
+                <h3>Contact Us:</h3>
+                <form action="localhost:3000/submit-contact-form">
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name" />
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" />
+
+                    <label >What services can we provide you?</label>
+                    <input type="checkbox" name="service_1" id="service_1"></input>
+                    <label for="service_1">Analyics / BI</label>
+                    <input type="checkbox" name="service_2" id="service_2"></input>
+                    <label for="service_2">Application Development</label>
+                    <input type="checkbox" name="service_3" id="service_3"></input>
+                    <label for="service_3">Databases / Data Processing</label>
+                    <input type="checkbox" name="service_4" id="service_4"></input>
+                    <label for="service_4">General Consulting</label>
+                    <input type="checkbox" name="service_5" id="service_5"></input>
+                    <label for="service_5">Website Design</label>
+                    <input type="checkbox" name="service_6" id="service_6"></input>
+                    <label for="service_6">Maintenance</label>
+
+                    <label for="project">How can we help you?</label>
+                    <textarea name="project"></textarea>
+
+                    <button type="button">Submit</button>
+                </form>
             </main>
             <aside>
                     <script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
@@ -60,5 +88,6 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129508803-1"></script>
     <script async src="js/google.js"></script>
     <script async src="js/facebook.js"></script>
+    <script async src="js/contact.js"></script>
 </body>
 </html>

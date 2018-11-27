@@ -25,6 +25,8 @@
 
     --glass-dark: rgba(24, 24, 24, 0.9);
     --glass-lite: rgba(96, 96, 96, 0.6);
+    
+    --form-field: rgba(256, 212, 164, 0.9);
 
     --header-height: 72px;
     --padding-base: 32px;
