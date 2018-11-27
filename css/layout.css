@@ -430,10 +430,12 @@ footer a.social {
     background-color: var(--fg-color-1);
     height: 36px;
     width: 36px;
+    /* transition: background-color .1s; */
 }
 
 footer a.social:hover {
-    background-color: var(--fg-color-2);
+    /* transition: background-color .1s; */
+    animation: 2s coin-spin linear infinite forwards;
 }
 
 footer a[title="facebook"] {
@@ -449,6 +451,24 @@ footer a[title="linkedin"] {
 footer a[title="github"] {
     -webkit-mask-image: url(../images/github.svg);
     mask-image: url(../images/github.svg);
+}
+
+footer a[title="twitter"] {
+    -webkit-mask-image: url(../images/twitter.svg);
+    mask-image: url(../images/twitter.svg);
+}
+
+footer a[title="facebook"]:hover {
+    background-color: var(--brand-facebook)
+}
+footer a[title="linkedin"]:hover {
+    background-color: var(--brand-linkedin)
+}
+footer a[title="github"]:hover {
+    background-color: var(--brand-github)
+}
+footer a[title="twitter"]:hover {
+    background-color: var(--brand-twitter)
 }
 
 .fb_iframe_widget {
