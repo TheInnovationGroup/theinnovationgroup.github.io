@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
+    background: var(--header-bg);
     height: var(--header-height);
     position: fixed;
     width: 100%;
@@ -371,20 +371,84 @@ form textarea {
 }
 
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
     font-family: 'Courier New', Courier, monospace;
-    width: 100%;
-    height: 32px;
-    padding: 8px;
+    height: 42vh;
     box-sizing: border-box;
     border-top: 1px solid var(--fg-color-4);
-    background: linear-gradient(22deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4);
+    background: var(--footer-bg);
 }
 
-footer span:last-child { float: right; }
+footer > div { 
+    flex: .5;
+    display: flex;
+    padding: 0 4%;
+    height: 44%;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
 
-footer a { 
+footer > div div {
+    display: flex;
+    flex-flow: row;
+    width: 60%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+footer > div span {
+    margin-top: 64px;
+    font-size: 14px;
+}
+
+footer h4 {
+    font-family: 'innovation';
     color: var(--fg-color-2);
+    border-bottom: 1px solid var(--fg-color-1);
+    margin: 0;
+    font-size: 26px;
+    line-height: 42px;
+    height: 64px;
+    width: 100%;
+    margin: 36px;
+}
+
+footer hr {
+    width: 100%;
+    border: 1px solid var(--fg-color-2);
+}
+
+footer a {
+    color: var(--code-name);
     text-decoration: none; 
+}
+
+footer a.social {
+    background-color: var(--fg-color-1);
+    height: 36px;
+    width: 36px;
+}
+
+footer a.social:hover {
+    background-color: var(--fg-color-2);
+}
+
+footer a[title="facebook"] {
+    -webkit-mask-image: url(../images/facebook.svg);
+    mask-image: url(../images/facebook.svg);
+}
+
+footer a[title="linkedin"] {
+    -webkit-mask-image: url(../images/linkedin.svg);
+    mask-image: url(../images/linkedin.svg);
+}
+
+footer a[title="github"] {
+    -webkit-mask-image: url(../images/github.svg);
+    mask-image: url(../images/github.svg);
 }
 
 .fb_iframe_widget {

@@ -265,4 +265,25 @@
         right: 30%;
         top: auto;
     }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer h4 {
+        margin: 18px;
+    }
+
+    footer > div div {
+        width: 84%;
+    }
+
+    footer > div span {
+        margin-top: 36px;
+    }
+
+    footer a.social {
+        height: 32px;
+        width: 32px;
+    }
 }

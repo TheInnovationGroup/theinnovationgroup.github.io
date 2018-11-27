@@ -26,10 +26,16 @@
     --glass-dark: rgba(24, 24, 24, 0.9);
     --glass-lite: rgba(96, 96, 96, 0.6);
     
+    --header-bg: linear-gradient(45deg, var(--bg-color-3), var(--glass-dark)),rgba(0, 0, 0, .4);
+    /* --header-bg: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4); */
+
+    --footer-bg: linear-gradient(24deg, var(--bg-color-1), var(--glass-dark)),rgba(0, 0, 0, .9);
+    /* --footer-bg: linear-gradient(24deg, var(--bg-color-5), var(--glass-dark)), rgba(0, 0, 0, .4); */
+
     --form-field: rgba(256, 212, 164, 0.9);
 
     --header-height: 72px;
-    --padding-base: 32px;
+    --padding-base: 28px;
 
     --delay-chain-1: 0.4s;
     --delay-chain-2: calc(var(--delay-chain-1) * 2);
