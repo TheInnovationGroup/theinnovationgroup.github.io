@@ -4,6 +4,10 @@
         font-size: 18px;
         letter-spacing: 1.1px;   
     }
+
+    main > a, aside > a {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -19,6 +23,10 @@
 
     main > ul li, aside > ul li { 
         font-size: 18px;
+    }
+
+    main > a, aside > a {
+        font-size: 22px;
     }
 
     .example-code ol {
@@ -60,17 +68,25 @@
         flex: .5;
     }
 
+    section:only-of-type aside {
+        padding-left: 3%;
+    }
+
     main {
         padding: 0;
         flex: .6;
+    }
+
+    aside {
+        flex: .4;
     }
 
     main > ul li, aside > ul li { 
         font-size: 15px;
     }
 
-    aside {
-        flex: .4;
+    main > a, aside > a {
+        font-size: 16px;
     }
 
     .example-graph span label {
@@ -200,6 +216,11 @@
     section:only-of-type > div main,
     section:only-of-type > div aside {
         flex: .5;
+        padding: 4% 0;
+    }
+
+    section:only-of-type > div h3 {
+        margin-bottom: 12px;
     }
 
     aside {
@@ -216,6 +237,10 @@
 
     main ul li, aside ul li {
         padding: 0;
+    }
+
+    main > a, aside > a {
+        padding: 12px 0;
     }
 
     .example-app {

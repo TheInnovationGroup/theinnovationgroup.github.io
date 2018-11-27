@@ -1,6 +1,12 @@
 
 let ContactForm = {
 
+    // url: "https://innovation-contact.herokuapp.com/submit-contact-form",
+
+    url: window.location.href.startsWith('file://') 
+        ? "http://localhost:3000/submit-contact-form"
+        : "https://innovation-contact.herokuapp.com/submit-contact-form",
+
     form: null,
     fields: {},
 
@@ -44,7 +50,7 @@ let ContactForm = {
         }
 
         var xhr = new XMLHttpRequest();   // new HttpRequest instance 
-        xhr.open("POST", "https://innovation-contact.herokuapp.com/submit-contact-form");
+        xhr.open("POST", ContactForm.url);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
         xhr.onreadystatechange = function() {
@@ -57,7 +63,7 @@ let ContactForm = {
     },
 
     on_success() {
-        alert('Thank you, we will contact you shortly to speak with you about your project.');
+        window.location.href = "contact-success.html"
     }
 }
 
