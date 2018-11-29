@@ -23,8 +23,11 @@
     --dark-grey: #2f2f2f;
     --grey: #6f6f6f; 
 
-    --glass-dark: rgba(24, 24, 24, 0.9);
-    --glass-lite: rgba(96, 96, 96, 0.6);
+    /* --glass-dark: rgba(24, 24, 24, 0.9);
+    --glass-lite: rgba(96, 96, 96, 0.6); */
+
+    --glass-dark: rgba(24, 24, 24, 0.94);
+    --glass-lite: rgba(96, 96, 96, 0.88);
     
     --header-bg: linear-gradient(45deg, var(--bg-color-3), var(--glass-dark)),rgba(0, 0, 0, .4);
     /* --header-bg: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4); */
@@ -39,8 +42,9 @@
     --brand-linkedin: #0077B5;
     --brand-github: #181717;
 
-    --header-height: 72px;
-    --padding-base: 28px;
+    --header-height: 80px;
+    --footer-height: 46vh;
+    --padding-base: 32px;
 
     --delay-chain-1: 0.4s;
     --delay-chain-2: calc(var(--delay-chain-1) * 2);

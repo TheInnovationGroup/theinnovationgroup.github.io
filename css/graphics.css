@@ -135,6 +135,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 .example-schema > span {
@@ -146,6 +147,8 @@
     /* display: flex;
     flex-flow: row wrap;
     justify-content: stretch; */
+    position: relative;
+    overflow: hidden;
     
 }
 
@@ -154,6 +157,7 @@
     padding: 4%;
     float: left;
     height: 100%;
+    max-height: 400px;
     box-sizing: border-box;
     border: 1px solid var(--glass-dark);
     background: linear-gradient(36deg, var(--glass-lite), var(--bg-color-3));
@@ -205,7 +209,8 @@
 
 .example-schema > span:nth-of-type(1) > div:nth-of-type(1) {
     animation: example-schema-1 var(--schema-props);
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .example-schema > span:nth-of-type(1) > div:nth-of-type(2) {

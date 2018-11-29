@@ -247,6 +247,10 @@
         padding: 0;
     }
 
+    .example-schema > span {
+        display: flex;
+    }
+
     .about { overflow: hidden; }
 
     .about div {
