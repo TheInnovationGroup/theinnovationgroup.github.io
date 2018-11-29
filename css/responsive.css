@@ -245,6 +245,7 @@
 
     .example-app {
         padding: 0;
+        display: none;
     }
 
     .example-schema > span {
