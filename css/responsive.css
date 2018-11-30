@@ -271,12 +271,24 @@
         top: auto;
     }
 
+    footer {
+        flex-flow: column nowrap;
+    }
+
     footer a {
         font-size: 14px;
     }
 
     footer h4 {
-        margin: 18px;
+        margin: 16px;
+        font-size: 24px;
+        line-height: 26px;
+        height: 28px;
+    }
+
+    footer > div {
+        height: 30%;
+        flex: .42;
     }
 
     footer > div div {
@@ -284,7 +296,7 @@
     }
 
     footer > div span {
-        margin-top: 36px;
+        margin-top: 16px;
     }
 
     footer a.social {
