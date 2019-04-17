@@ -4,10 +4,6 @@
         font-size: 18px;
         letter-spacing: 1.1px;   
     }
-
-    main > a, aside > a {
-        font-size: 24px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,22 +11,6 @@
     p {
         font-size: 16px;
         letter-spacing: 1.1px;   
-    }
-
-    main > ul, aside > ul {
-        margin: 0 0 0 8%;
-    }
-
-    main > ul li, aside > ul li { 
-        font-size: 18px;
-    }
-
-    main > a, aside > a {
-        font-size: 22px;
-    }
-
-    .example-code ol {
-        font-size: 10px;
     }
 }
 
@@ -52,45 +32,13 @@
         font-size: 14px;
         letter-spacing: 1.1px;
     }
-
-    section {
-        min-height: 68vh;
-        margin: calc(var(--padding-base) / 2);
-        padding: calc(var(--padding-base) / 2);
-    }
-
-    section:nth-of-type(even) aside {
-        padding-left: 0;
-        padding-right: 4%;
-    }
-
-    section:not(:first-of-type) main:not(:only-child), section:not(:first-of-type) aside {
-        flex: .5;
-    }
-
-    section:only-of-type aside {
-        padding-left: 3%;
-    }
-
     main {
         padding: 0;
         flex: .6;
     }
 
-    aside {
-        flex: .4;
-    }
-
     main > ul li, aside > ul li { 
         font-size: 15px;
-    }
-
-    main > a, aside > a {
-        font-size: 16px;
-    }
-
-    .example-graph span label {
-        font-size: 12px;
     }
 
     footer {
@@ -121,6 +69,16 @@
 
     h2 {
         font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin: 4px 0;
     }
 
     header {
@@ -178,6 +136,10 @@
         border: none;
         background: linear-gradient(-36deg, var(--bg-color-4), var(--glass-dark));
         transition: .24s linear all;
+    }
+
+    body > input:checked:focus {
+        outline: none;
     }
 
     body > input:checked:before {
@@ -238,49 +200,14 @@
     }
 
     main {
+        flex: 1;
         height: calc(100vh - var(--golden-height-second));
         margin: var(--golden-height-seventh) var(--golden-width-sixth);
-        margin-bottom: var(--golden-height-third);
+        margin-bottom: calc(var(--golden-height-third) + var(--golden-height-seventh));
     }
 
-    main ul, aside ul {
+    main ul {
         margin: 4% 0 4% 4%;
-    }
-
-    main ul li, aside ul li {
-        padding: 0;
-    }
-
-    main > a, aside > a {
-        padding: 12px 0;
-    }
-
-    .example-app {
-        padding: 0;
-        display: none;
-    }
-
-    .example-schema > span {
-        display: flex;
-    }
-
-    .about { overflow: hidden; }
-
-    .about div {
-        flex-flow: column nowrap;
-    }
-
-    .about div main {
-        flex: .5;
-    }
-
-    .about div aside {
-        flex: .5;
-    }
-
-    .about div aside .i-coin span {
-        right: 30%;
-        top: auto;
     }
 
     footer {
