@@ -104,7 +104,9 @@
         --header-height: calc(var(--header-root) / var(--phi));
     }
 
-    body { 
+    body {
+        height: 100vh;
+        overflow: hidden;
         padding-top: var(--header-height);
         flex-flow: column nowrap;
     }
