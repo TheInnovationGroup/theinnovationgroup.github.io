@@ -36,6 +36,7 @@ body > input {
 header > a {
     text-decoration: none;
     color: var(--brand-1);
+    text-shadow: 1px 1px rgba(128, 128, 128, 0.6);
     display: block;
     height: 100%;
 }
@@ -100,13 +101,14 @@ nav > button.selected {
 
 h1, h2, h3, h4 {
     font-family: 'fira-sans';
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1pt;
     clear: both;
 }
 
 h1 {
     opacity: 0;
+    font-weight: 200;
     margin-left: var(--h1-root);
     margin-top: var(--golden-height-sixth);
     font-size: var(--h1-root);
@@ -151,7 +153,7 @@ h4 {
 p {
     font-size: 12pt;
     line-height: 16pt;
-    color: var(--fg-2);
+    color: var(--fg-1);
     font-family: 'fira-sans';
     font-weight: 300;
     letter-spacing: 1.12pt;
@@ -195,6 +197,7 @@ main {
     animation-delay: .36s;
     animation-fill-mode: forwards;
     transform: scalex(0.1);
+    overflow-y: scroll;
 }
 
 main > * {
@@ -269,7 +272,7 @@ footer > div div {
 footer > div span {
     /* margin-top: 64px; */
     font-size: 14px;
-    margin-top: 6px;
+    margin-top: 2px;
 }
 
 footer > div span b {
@@ -284,6 +287,13 @@ footer > div > div + span:hover, footer > div > a:hover {
     letter-spacing: 1.08pt;
     transition: letter-spacing 0.18s ease-in;
 }
+
+footer > div:first-child > span > em {
+    font-size: 18px;
+    color: var(--brand-5);
+    margin-left: 2px;
+    margin-right: 16px;
+} 
 
 footer h4 {
     color: var(--fg-1);
