@@ -1,72 +1,77 @@
-@font-face {
-    font-family: 'Innovation';
-    src: url(../fonts/innovation.woff);
-}
-
 :root {
-    
-    --fg-color-1: #ffeeea;
-    --fg-color-2: #c4aeb3;
-    --fg-color-3: #c39391;
-    --fg-color-4: #ae776a;
-    --fg-color-5: #a6614e;
-    --fg-color-6: rgba(195, 147, 145, 0.7);
-    --fg-color-7: rgba(174, 119, 106, 0.7);
-    --fg-color-8: rgba(166, 97, 78, 0.7);
-    
-    --bg-color-1: rgba(97, 96, 133, 0.5);
-    --bg-color-2: rgba(58, 76, 109, 0.6);
-    --bg-color-3: rgba(78, 73, 86, 0.7);
-    --bg-color-4: rgba(29, 59, 99, 0.8);
-    --bg-color-5: rgba(33, 53, 94, 0.9);
+    --pi: 3.1416;
+    --phi: 1.618;
 
-    --dark-grey: #2f2f2f;
-    --grey: #6f6f6f; 
+    --golden-height-root: 100vh;
+    --golden-height-first: calc(var(--golden-height-root) / var(--phi));
+    --golden-height-second: calc(var(--golden-height-root) - var(--golden-height-first));
+    --golden-height-third: calc(var(--golden-height-second) / var(--phi));
+    --golden-height-fourth: calc(var(--golden-height-second) - var(--golden-height-third));
+    --golden-height-fifth: calc(var(--golden-height-fourth) / var(--phi));
+    --golden-height-sixth: calc(var(--golden-height-fourth) - var(--golden-height-fifth));
+    --golden-height-seventh: calc(var(--golden-height-sixth) / var(--phi));
+    --golden-height-eighth: calc(var(--golden-height-sixth) - var(--golden-height-seventh));
 
-    /* --glass-dark: rgba(24, 24, 24, 0.9);
-    --glass-lite: rgba(96, 96, 96, 0.6); */
+    --golden-width-root: 100vw;
+    --golden-width-first: calc(var(--golden-width-root) / var(--phi));
+    --golden-width-second: calc(var(--golden-width-root) - var(--golden-width-first));
+    --golden-width-third: calc(var(--golden-width-second) / var(--phi));
+    --golden-width-fourth: calc(var(--golden-width-second) - var(--golden-width-third));
+    --golden-width-fifth: calc(var(--golden-width-fourth) / var(--phi));
+    --golden-width-sixth: calc(var(--golden-width-fourth) - var(--golden-width-fifth));
+    --golden-width-seventh: calc(var(--golden-width-sixth) / var(--phi));
+    --golden-width-eighth: calc(var(--golden-width-sixth) - var(--golden-width-seventh));
 
-    --glass-dark: rgba(24, 24, 24, 0.94);
-    --glass-lite: rgba(96, 96, 96, 0.88);
-    
-    --header-bg: linear-gradient(45deg, var(--bg-color-3), var(--glass-dark)),rgba(0, 0, 0, .4);
-    /* --header-bg: linear-gradient(45deg, var(--bg-color-1), var(--bg-color-3)), rgba(0, 0, 0, 0.4); */
+    --golden-flex-root: 1;
+    --golden-flex-first: calc(var(--golden-flex-root) / var(--phi));
+    --golden-flex-second: calc(var(--golden-flex-root) - var(--golden-flex-first));
+    --golden-flex-third: calc(var(--golden-flex-second) / var(--phi));
+    --golden-flex-fourth: calc(var(--golden-flex-second) - var(--golden-flex-third));
 
-    --footer-bg: linear-gradient(24deg, var(--bg-color-1), var(--glass-dark)),rgba(0, 0, 0, .9);
-    /* --footer-bg: linear-gradient(24deg, var(--bg-color-5), var(--glass-dark)), rgba(0, 0, 0, .4); */
+    --flex-base: calc(1 - (1 / var(--phi)));
 
-    --form-field: rgba(256, 212, 164, 0.9);
+    --header-root: var(--golden-height-fourth);
+    --h1-root: var(--golden-height-sixth);
+    --h2-root: var(--golden-height-eighth);
 
+    --footer-root: var(--golden-height-fourth);
+    --padding-base: 32px;
+
+    --button-height: var(--golden-height-sixth);
+   
     --brand-twitter: #1DA1F2;
     --brand-facebook: #3B5998;
     --brand-linkedin: #0077B5;
     --brand-github: #181717;
 
-    --header-height: 80px;
-    --footer-height: 46vh;
-    --padding-base: 32px;
+    --brand-1: #FFC88B;
+    --brand-2: #A8D5D6;
+    --brand-3: #75D279;
+    --brand-4: #A9D6D5;
+    --brand-5: #FFBBAA;
+
+    --bg-1: #262626;
+    --bg-2: #121618;
+    
+    --fg-1: #D6D6D6;
+    --fg-2: #c2c2c2;
+    --fg-3: #b6b4b6;
+
+    --dark-grey: #2f2f2f;
+    --grey: #6f6f6f;
+
+    --glass-dark: rgba(24, 24, 24, 0.80);
+    --glass-lite: rgba(72, 72, 72, 0.72);
+    
+    --header-bg: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+    --footer-bg: linear-gradient(24deg, var(--bg-color-1), var(--glass-dark)),rgba(0, 0, 0, .9);
+    --form-field: rgba(256, 212, 164, 0.9);
 
     --delay-chain-1: 0.4s;
     --delay-chain-2: calc(var(--delay-chain-1) * 2);
     --delay-chain-3: calc(var(--delay-chain-2) * 3);
     --delay-chain-4: calc(var(--delay-chain-3) * 4);
     --delay-chain-5: calc(var(--delay-chain-4) * 5);
-
-    --graph-bar-1: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
-    --graph-bar-2: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
-    --graph-bar-3: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
-    --graph-bar-4: linear-gradient(60deg, var(--bg-color-3), var(--glass-lite));
-
-    --graph-speed: 24s;
-
-    --schema-speed: 12s;
-    --schema-props: var(--schema-speed) linear infinite forwards;
-
-    --code-keyword: rgba(64, 192, 256, 0.8);
-    --code-name: rgba(256, 164, 128, 0.8);
-    --code-param: rgba(256, 128, 128, 0.8);
-
-    --code-indent: 14px;
 }
 
 ::-webkit-scrollbar-track {

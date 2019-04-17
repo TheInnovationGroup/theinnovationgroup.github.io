@@ -1,0 +1,122 @@
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible }
+}
+
+@keyframes h-blink-in {
+	0% { transform: ScaleX(0); }
+	90% { background: transparent; }
+	100% { transform: ScaleX(1);  background: linear-gradient(to bottom right, var(--bg-2), var(--glass-dark)); }
+}
+
+@keyframes test-in {
+	from {
+		opacity: 0;
+		transform: Skew(36deg, -6deg);
+	}
+	to {
+		opacity: 1;
+		transform: Skew(0); 
+	}
+}
+
+@keyframes v-drop-in {
+	0% { height: 0vh; opacity: 0; }
+	50% { opacity: 1; }
+	100% { height: var(--golden-height-first); opacity: 1; }
+}
+
+@keyframes sync-in {
+	0% {
+		opacity: 0;
+		transform:  ScaleX(0.1) TranslateX(-140vw);
+		height: 0vh;
+	}
+	64% {
+		opacity: 1;
+		height: 0vh;
+		transform: ScaleX(1) TranslateX(0);
+		flex: var(--golden-flex-first);
+	}
+	100% {
+		opacity: 1;
+		transform: ScaleX(1);
+		height: var(--golden-height-first);
+	}
+}
+
+@keyframes sync-out {
+	0% {
+		opacity: 1;
+		transform: ScaleX(1);
+		height: var(--golden-height-first);
+	}
+	64% {
+		opacity: 0;
+		height: 0;
+		transform: ScaleX(1) TranslateX(0);
+		flex: var(--golden-flex-first);
+	}
+	98% { visibility: hidden; display: none; }
+	100% {
+		opacity: 0;
+		transform:  ScaleX(0.1) TranslateX(-140vw);
+		height: 0;
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@keyframes alt-sync-in {
+	0% {
+		opacity: 0;
+		transform:  ScaleX(0.1) TranslateX(-240vw);
+	
+	}
+	64% {
+		opacity: 1;
+		width: 100vw;
+		transform: ScaleX(1) TranslateX(-40vh);
+	}
+	100% {
+		opacity: 1;
+		width: 100vw;
+		transform: ScaleX(1) TranslateX(0);
+	}
+}
+
+@keyframes coin-spin {
+    0% {
+		opacity: 1;
+		transform: rotateY(0deg);
+	}
+	25% {
+		transform: scale3d(1.12, 1.12, 1.12) rotateY(90deg);
+	}
+    50% {
+		opacity: 0.6;
+		transform: rotateY(180deg);
+	}
+	75% {
+		transform: scale3d(1.12, 1.12, 1.12) rotateY(270deg);
+	}
+    100% {
+		opacity: 1;
+        transform: rotateY(360deg)
+    }
+}
+
+@keyframes test-anim {
+	0% {
+		color: var(--brand-3);
+		opacity: 1;
+	}
+	54% {
+		color: var(--brand-4);
+		opacity: 0.92;
+	}
+	100% {
+		color: var(--brand-3);
+		opacity: 1;
+	}
+}

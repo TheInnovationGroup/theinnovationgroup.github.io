@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'code';
+    src: url(../fonts/code-light.otf);
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    font-weight: 100;
+    src: url(../fonts/firasans-four.otf);
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    font-weight: 200;
+    src: url(../fonts/firasans-hair.otf);
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    font-weight: 300;
+    src: url(../fonts/firasans-ultralight.otf);
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    font-weight: 400;
+    src: url(../fonts/firasans-light.otf);
+}

@@ -510,3 +510,7 @@
     font-size: 112px;
     text-shadow: 1px 1px 1px var(--glass-dark);
 }
+
+figure {
+    border-radius: 50%;
+}

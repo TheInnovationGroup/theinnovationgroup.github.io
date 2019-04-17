@@ -23,7 +23,7 @@
 
     <link rel="canonical" href="https://innovationgroup.tech/"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" media="screen" href="dist/style.min.css?" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css?" />
 
     <!-- Google Site Verification - Do Not Remove -->
     <meta name="google-site-verification" content="6OOUMiaSlrq-UsRBdXCl3C1Fg596f8MdjAlD31vDGq0" />
@@ -31,268 +31,136 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129508803-1"></script>
     <script async src="js/google.js"></script>
+   
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
+
+    <input type="checkbox" class="nav-menu"/>
+
     <header itemscope itemtype="http://schema.org/SiteNavigationElement">
         <a title="The Innovation Group" href="./index.html"><h1>The Innovation Group</h1></a>
-        <input type="checkbox" />
-        <nav>
-            <a title="home" href="./index.html">home</a>
-            <a title="about" href="./about.html">about</a>
-            <a title="contact" href="./contact.html">contact</a>
-        </nav>
     </header>
-    <section>
-        <h2>Welcome to The Innovation Group</h2>
-        <div>
-            <main>
-                <p>The Innovation Group provides analytics, business intelligence, design, and development services. Our mission is to empower our clients with the best available tools and resources to achieve their goals, by staying ahead of the industry and investing time into research and development of best practices.</p>
-                <p>Our modern approach to business and technology allows us to achieve the highest quality results in the shortest time possible, allowing you to focus on what you do best with confidence that your product or service is top-notch and works great.</p>
-                <p>We can take your project from concept to production and bring your idea to life, or rebuild your aging legacy system to meet future needs and dramatically reduce development and maintenance costs.</p>
-                <p></p>
-            </main>
-            <aside>
-                <div class="spinner">
-                    <div><div></div></div>
-                    <div><div></div></div>
-                    <div><div></div></div>
-                    <div><div></div></div>
-                    <div><div></div></div>
-                    <div><div></div></div>
-                </div>
-            </aside>
+  
+    <nav>
+        <button name="welcome">Welcome</button>
+        <button name="news">News</button>
+        <button name="tools">Tools</button>
+        <button name="services">Services</button>
+        <button name="resources">Resources</button>
+        <button name="showcase">Showcase</button>
+        <button name="contact">Contact</button>
+    </nav>
+
+    <main name="welcome">
+        <h2>Welcome!</h2>
+        <p>Welcome and thank you for visiting our site.</p>
+        <p>Here, you can learn about The Innovation Group and what we do, and find useful information about software, security, production, and more.</p>
+        <p>This website is currently under development so check back periodically for updates.</p>
+    </main>
+
+    <main name="news" class="hidden">
+        <h2>News</h2>
+        <h3>Website Updates</h3>
+        <h4>4/1/2019</h4>
+        <p>We are in the process of rebuilding our website from scratch and we will be adding new content every week, from useful tips and tricks for everyday business to information for developers, consultants, and creative professionals.</p>
+        <p>Check back for updates and thanks again for visiting our site!</p>
+    </main>
+    
+    <main name="tools" class="hidden">
+        <h2>Tools</h2>
+        <p>Here are a few links to some of the various tools and technologies we use:</p>
+        <div class="flex-three">
+            <div>
+                <h3>Languages</h3>
+                <ul>
+                    <li><a href="https://dartlang.org">Dart</a></li>
+                    <li><a href="https://www.typescriptlang.org">TypeScript 3</a></li>
+                    <li><a href="https://www.ecma-international.org/ecma-262/8.0/index.html">ECMAScript 8</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C# 7</a></li>
+                    <li><a href="https://www.php.net">PHP 7</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3">CSS3</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Technology</h3>
+                <ul>
+                    <li><a href="https://flutter.dev">Flutter</a></li>
+                    <li><a href="https://nodejs.org">Node</a></li>
+                    <li><a href="https://git-scm.com">Git</a></li>
+                    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+                </ul>
+            
+            </div>
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="https://www.heroku.com">Heroku</a></li>
+                    <li><a href="https://azure.microsoft.com">Azure</a></li>
+                    <li><a href="https://aws.amazon.com">AWS</a></li>
+                    <li><a href="https://www.linode.com">Linode</a></li>
+                    <li><a href="https://www.twilio.com">Twilio</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-    <section>
-        <h2>Consulting</h2>
-        <div>
-            <aside>
-                <div class="example-graph">
-                    <span>
-                        <label>graph 1</label>
-                        <label>graph 2</label>
-                        <label>graph 3</label>
-                        <label>graph 4</label>
-                    </span>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </aside>
-            <main>
-                <p>We provide a variety of consulting services to help you grow your business and stay ahead of the curve. If you're not sure what you need, we can help you find ways to unlock your potential.</p>
+       
+    </main>
+
+    <main name="services" class="hidden">
+        <h2>Services</h2>
+        <p>The Innovation Group brings together the best of classic and modern design methods to create solid user experiences backed by robust and well-defined system architecture.</p>
+        <p>Here are a few of the services we provide:</p>
+        <div class="flex-one">
+            <div>
                 <ul>
                     <li>Analytics</li>
                     <li>Business Intelligence</li>
-                    <li>Data Management</li>
-                    <li>Intellectual Property</li>
+                    <li>Software Design and Development</li>
+                    <li>Intellectual Property Management</li>
                     <li>Project Management</li>
                     <li>Requirements Analysis</li>
-                    <li>Standards Compliance</li>
-                    <li>Technical Writing</li>
-                    <li>Training / Development</li>
+                    <li>Technical Writing and Documentation</li>
+                    <li>Training and Standardization</li>
                 </ul>
-            </main>
+            </div>
         </div>
-    </section>
-    <section>
-        <h2>Design</h2>
-        <div>
-            <main>
-                <p>We can take your ideas to the next level by determining your specific needs and creating designs that meet and exceed your requirements, to leave a great impression on your clients, customers, and partners.  </p>
-                <ul>
-                    <li>Branding</li>
-                    <li>Concept Mapping</li>
-                    <li>Data Modeling</li>
-                    <li>Dashboards / Metrics</li>
-                    <li>Mobile / Web UX</li>
-                    <li>Presentations</li>
-                    <li>Websites</li>
-                    <li>Wireframes</li>
-                </ul>
-            </main>
-            <aside>
-                <div class="example-schema">
-                    <span>
-                        <div>
-                            <label>customers</label>
-                            <ul>
-                                <li>name</li>
-                                <li>email</li>
-                                <li>phone</li>
-                                <li>etc</li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <div>
-                            <label>orders</label>
-                            <ul>
-                                <li>date</li>
-                                <li>address</li>
-                                <li>priority</li>
-                                <li>delivered</li>
-                            </ul>
-                        </div>
-                    </span>
-                    <span>
-                        <div>
-                            <label>misc</label>
-                            <ul>
-                                <li>x 1</li>
-                                <li>x 2</li>
-                                <li>x 3</li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <div>
-                            <label>cool</label>
-                            <ul>
-                                <li>y 1</li>
-                                <li>y 2</li>
-                                <li>y 3</li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <div>
-                            <label>etc</label>
-                            <ul>
-                                <li>z 1</li>
-                                <li>z 2</li>
-                                <li>z 3</li>
-                            </ul>
-                        </div>
-                    </span>
-                </div>
-            </aside>
-        </div>
-    </section>
-    <section>
-        <h2>Development</h2>
-        <div>
-            <aside>
-                <div class="example-app">
-                    <div>
-                        <div>
-                            <div class="example-graph">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="spinner">
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="example-schema">
-                                <span>
-                                    <div>
-                                      <label>a</label>
-                                    
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <label>b</label>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div>
-                                        <label>x</label>
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <label>y</label>
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <label>z</label>
-                                    </div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>    
-                    <div>
-                        <div>
-                            <span>app</span>
-                            <div class="spinner">
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                                <div><div></div></div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-                <div class="example-code">
-                    <ol>
-                        <li><em>namespace</em> <b>App</b> <i>{</i></li>
-                        <li></li>
-                        <li data-indent="2"><em>class</em> <b>Button</b> <em>extends</em> <b>Component</b> <i>{</i></li>
-                        <li></li>
-                        <li data-indent="3"><em>public</em> <b>element:</b> <em>HTMLElement</em></li>
-                        <li></li>
-                        <li data-indent="3"><em>public</em> <b>handler:</b> <em>Function</em></li>
-                        <li></li>
-                        <li data-indent="3"><em>public </em> <b>onclick</b> <i>= (<span>event</span>) => {</i></li>
-                        <li></li>
-                        <li data-indent="4"><i><b>this</b>.handler(<span>event</span>) </i></li>
-                        <li data-indent="4"><i><b>return</b> <em>true</em></i></li>
-                        <li data-indent="3"><i>}</i></li>
-                        <li data-indent="2"><i>}</i></li>
-                        <li></li>
-                        <li data-indent="2"><em>class</em> <b>Form</b> <em>extends</em> <b>Component</b> <i>{</i></li>
-                        <li></li>
-                        <li data-indent="3"><em>public</em> <b>element:</b> <em>HTMLElement</em></li>
-                        <li></li>
-                        <li data-indent="2"><i>}</i></li>
-                        <li><i>}</i></li>
-                    </ol>
-                </div>
-            </aside>
-            <main>
-                <p>Our team has the expertise and resources to build your enterprise application, mobile app, website, or service. </p>
-                <ul>
-                    <li>App Architecture</li>
-                    <li>CI / CD / Cloud</li>
-                    <li>Code Review</li>
-                    <li>Databases</li>
-                    <li>Electronics / IoT</li>
-                    <li>Frameworks / Libraries</li>
-                    <li>Open Source Software</li>
-                    <li>Performance Tuning</li>
-                    <li>Refactoring / Redesign</li>
-                    <li>Static Analysis</li>
-                </ul>
-            </main>
-        </div>
-    </section>
+      
+        <p>For a more detailed look at how we operate, download our <a href="/pdf/innovation-group-consulting.pdf">corporate services brochure</a>.</p>
+    </main>
+
+    <main name="resources" class="hidden">
+        <h2>Resources</h2>
+        <p>Here you will find some useful resources to learn about new technologies and emerging trends.</p>
+    </main>
+
+    <main name="showcase" class="hidden">
+        <h2>Showcase</h2>
+        <p>Check out some of our great work!</p>
+    </main>
+    <main name="contact" class="hidden">
+        <h2>Contact Us</h2>
+        <p>Contact Us</p>
+    </main>
+
     <footer>
-        <h4>The Innovation Group</h4>
         <div>
-            <a title="telephone" href="tel:2089145239">&#128222; 208.914.5239</a>
-            <a title="email" href="mailto:solutions@innovationgroup.tech">&#128231; solutions@innovationgroup.tech</a>
-            <span>&copy; 2018 The Innovation Group</span>
+            <!-- <h4>The Innovation Group</h4> -->
+            <a title="telephone" href="tel:2089145239">&#128222;&nbsp; 208.914.5239</a>
+            <a title="email" href="mailto:solutions@innovationgroup.tech">&#128231;&nbsp; solutions@innovationgroup.tech</a>
+            <span>&copy;&nbsp; 2018 The Innovation Group</span>
         </div>
         <div>
             <div>
-                    <a class="social" title="facebook" href="https://www.facebook.com/innovationgroup.tech/"></a>
-                    <a class="social" title="linkedin" href="https://www.linkedin.com/company/theinnovationgroup/"></a>
-                    <a class="social" title="github" href="https://github.com/TheInnovationGroup"></a>
-                    <a class="social" title="twitter" href="https://twitter.com/_innovation_grp"></a>
+                <a class="social" title="facebook" href="https://www.facebook.com/innovationgroup.tech/"></a>
+                <a class="social" title="linkedin" href="https://www.linkedin.com/company/theinnovationgroup/"></a>
+                <a class="social" title="github" href="https://github.com/TheInnovationGroup"></a>
+                <a class="social" title="twitter" href="https://twitter.com/_innovation_grp"></a>
             </div>
-           
-            <span>Designed by <a title="@8_bit_hacker" href="https://twitter.com/8_bit_hacker">@8_bit_hacker</a></span>
+            
+            <span><b>[</b> design by <a title="@8_bit_hacker" href="https://twitter.com/8_bit_hacker">@8_bit_hacker</a> <b>]</b></span>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
