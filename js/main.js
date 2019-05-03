@@ -1,3 +1,8 @@
+/** 
+ * Copyright 2019 The Innovation Group 
+ * @author Kenneth Reilly <kenneth@innovationgroup.tech>
+ * */
+
 class UX {
 
 	static on_click_nav(button) {
@@ -6,8 +11,8 @@ class UX {
 			this.nav_buttons[i].classList.remove('selected')
 		}
 		
-		this.menu_button.checked = false;
-		button.classList.add('selected');
+		this.menu_button.checked = false
+		button.classList.add('selected')
 		
 		for (var i = 0, ii = this.sections.length; i != ii; ++i) {
 			if (this.sections[i].getAttribute('name') == button.getAttribute('name')) {
@@ -38,4 +43,4 @@ class UX {
 	}
 }
 
-UX.init();
+UX.init()
