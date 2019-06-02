@@ -9,7 +9,7 @@
 	100% { transform: ScaleX(1);  background: linear-gradient(to bottom right, var(--bg-2), var(--glass-dark)); }
 }
 
-@keyframes test-in {
+@keyframes skew-in {
 	from {
 		opacity: 0;
 		transform: Skew(36deg, -6deg);

@@ -1,5 +1,4 @@
 :root {
-    --pi: 3.1416;
     --phi: 1.618;
 
     --golden-height-root: 100vh;
@@ -27,8 +26,8 @@
     --golden-flex-second: calc(var(--golden-flex-root) - var(--golden-flex-first));
     --golden-flex-third: calc(var(--golden-flex-second) / var(--phi));
     --golden-flex-fourth: calc(var(--golden-flex-second) - var(--golden-flex-third));
-
-    --flex-base: calc(1 - (1 / var(--phi)));
+    --golden-flex-fifth: calc(var(--golden-flex-fourth) / var(--phi));
+    --golden-flex-sixth: calc(var(--golden-flex-fourth) - var(--golden-flex-third));
 
     --header-root: var(--golden-height-fourth);
     --h1-root: var(--golden-height-sixth);
@@ -49,6 +48,7 @@
     --brand-3: #75D279;
     --brand-4: #A9D6D5;
     --brand-5: #FFBBAA;
+    --brand-6: #d020ff;
 
     --bg-1: #262626;
     --bg-2: #121618;
@@ -63,24 +63,13 @@
     --glass-dark: rgba(24, 24, 24, 0.80);
     --glass-lite: rgba(72, 72, 72, 0.72);
     
-    --header-bg: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
-    --footer-bg: linear-gradient(24deg, var(--bg-color-1), var(--glass-dark)),rgba(0, 0, 0, .9);
-    --form-field: rgba(256, 212, 164, 0.9);
-
-    --delay-chain-1: 0.4s;
-    --delay-chain-2: calc(var(--delay-chain-1) * 2);
-    --delay-chain-3: calc(var(--delay-chain-2) * 3);
-    --delay-chain-4: calc(var(--delay-chain-3) * 4);
-    --delay-chain-5: calc(var(--delay-chain-4) * 5);
+    --header-bg: transparent;
+    --footer-bg: linear-gradient(to bottom right, var(--glass-dark), var(--bg-1));
 }
 
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-}
+::-webkit-scrollbar-track {  background: rgba(0, 0, 0, 0.1); }
 
-::-webkit-scrollbar {
-    width: 6px;
-}
+::-webkit-scrollbar { width: 6px; }
 
 ::-webkit-scrollbar-thumb {
     width: 6px;

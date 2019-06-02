@@ -10,11 +10,11 @@ body {
     flex-flow: row wrap;
     min-height: 100vh;
     padding-top: var(--header-root);
+    font-family: 'fira-sans';
 }
 
 header {
-    /* background: var(--header-bg); */
-    background: transparent;
+    background: var(--header-bg);
     border-bottom: 1px solid var(--brand-2);
     height: var(--header-root);
     position: fixed;
@@ -42,44 +42,44 @@ header > a {
 }
 
 nav {
-    opacity: 0;
     --margin-base: var(--golden-height-sixth);
     --flex-base: calc(1 - (1 / var(--phi)));
+    opacity: 0;
+    height: 0vh;
+    display: flex;
     flex: var(--golden-flex-third);
+    flex-flow: column nowrap;
+    text-align: right;
     margin-left: var(--margin-base);
     margin-top: var(--margin-base);
     padding-right: var(--golden-height-eighth);
-    height: 0vh;
     border-right: 1px solid var(--grey);
-    text-align: right;
-    display: flex;
-    flex-flow: column nowrap;
     animation: v-drop-in .18s ease-in;
     animation-fill-mode: forwards;
     animation-delay: .24s;
 }
 
 nav > button {
+    opacity: 0;
     visibility: hidden;
     display: inline-block;
     font-family: 'code';
     font-size: 22px;
     line-height: 48px;
-    padding: 0;
-    opacity: 0;
+    background: transparent;
     color: var(--fg-1);
+    letter-spacing: calc(1pt * var(--phi));
+    text-shadow: 2px 2px 4px var(--glass-dark);
     height: var(--golden-height-sixth);
     margin-bottom: var(--golden-height-eighth);
-    text-shadow: 2px 2px 4px var(--glass-dark);
-    background: transparent;
-    animation: fade-in 0.24s ease-in;
-    animation-fill-mode: forwards;
-    animation-delay: .48s;
     border: 1px solid var(--grey);
     border-bottom: none;
     border-left: none;
+    padding: 0;
+    animation: fade-in 0.24s ease-in;
+    animation-delay: .48s;
+    animation-fill-mode: forwards;
     transition: all 0.18s linear;
-    letter-spacing: calc(1pt * var(--phi));
 }
 
 nav > button:hover {
@@ -114,20 +114,22 @@ h1 {
     font-size: var(--h1-root);
     line-height: var(--h1-root);
     /* text-shadow: -1px 1px var(--glass-lite); */
-    animation: test-in .2s ease-in;
+    animation: skew-in .2s ease-in;
     animation-delay: .06s;
     animation-fill-mode: forwards;
 }
 
 h2 {
     margin: 0;
+    margin-bottom: 1.4%;
     font-size: var(--h2-root);
     line-height: var(--golden-height-sixth);
     padding-left: calc(var(--golden-width-eighth) / var(--phi));
     vertical-align: middle;
     color: var(--brand-2);
-    width: calc(100% / var(--phi));
+    /* width: calc(100% / var(--phi)); */
 
+    background: linear-gradient(-24deg, rgba(64, 64, 64, 0.2), rgba(96, 96, 96, 0.3));
     border-left: 1px solid var(--glass-lite);
     border-bottom: 1px solid var(--glass-lite);
 }
@@ -140,7 +142,7 @@ h3 {
     font-size: var(--h2-root);
     margin-top: var(--golden-height-eighth);
     margin-bottom: var(--golden-height-eighth);
-    color: var(--brand-3);
+    color: var(--brand-1);
 }
 
 h4 {
@@ -167,32 +169,15 @@ ul {
 ul > li {
     font-family: 'fira-sans';
     font-weight: 200;
-    font-size: 12pt;
-    line-height: 16pt;
-    color: var(--fg-2);
-}
-
-main a {
-    /* letter-spacing: 1.08pt; */
-    font-size: 12pt;
+    font-size: var(--golden-height-eighth);
     line-height: 16pt;
     color: var(--fg-1);
-    font-family: 'fira-sans';
-    color: var(--brand-4);
-    text-decoration: none;
-    transition: letter-spacing 0.12s ease-in;
-    padding: 0;
-}
-
-main a:hover {
-    transition: letter-spacing 0.18s ease-in;
-    letter-spacing: 1.12pt;
 }
 
 main {
     opacity: 0;
     --margin-base: var(--golden-height-sixth);
-    flex: var(--golden-flex-first);
+    flex: calc(var(--golden-flex-first) + var(--golden-flex-fifth));
     height: var(--golden-height-first);
     margin-left: var(--margin-base);
     margin-top: var(--margin-base);
@@ -203,6 +188,8 @@ main {
     animation-fill-mode: forwards;
     transform: scalex(0.1);
     overflow-y: scroll;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 main > * {
@@ -217,8 +204,90 @@ main > :not(h2) {
     padding-right: var(--golden-width-eighth);
 }
 
-main > div ~ div {
-    margin-top: 18px;
+main > div ~ div { margin-top: 18px; }
+
+main a {
+    padding: 0;
+    line-height: 16pt;
+    font-size: 12pt;
+    font-family: 'fira-sans';
+    text-decoration: none;
+    color: var(--brand-4);
+    transition: letter-spacing 0.12s ease-in;
+}
+
+main a:hover {
+    transition: letter-spacing 0.18s ease-in;
+    letter-spacing: 1.12pt;
+}
+
+main > div {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    padding: 0;
+    flex: 1;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+main > div section {
+    width: 49.6%;
+    height: 49.6%;
+    box-sizing: border-box;
+    border-top: 1px solid var(--glass-lite);
+    border-right: 1px solid var(--glass-lite);
+    border-bottom: 1px solid var(--glass-dark);
+    border-left: 1px solid var(--glass-dark);
+    background: linear-gradient(-30deg, var(--glass-dark), var(--glass-lite));
+    color: var(--fg-1);
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    justify-content: stretch;
+    padding: 4% 0;
+    font-size: var(--golden-height-eighth);
+    text-shadow: 1px 1px #0a0b0c;
+}
+
+main > div > section h3 {
+    flex: .3;
+}
+
+main > div > section div {
+    flex: .7;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+main > div > section h3,
+main > div > section a[href^='tel'],
+main > div > section a[href^='mailto'] { text-align: center; }
+
+main > div > section a[href^='tel'] {
+    font-size: var(--golden-height-seventh);
+}
+
+main > div > section a[href^='mailto'] {
+}   
+
+main > div > section a {
+    font-size: var(--golden-height-eighth);
+}
+
+main > div > section ul,
+main > div > section p,
+main > div > section span {
+    margin-left: 10%;
+}
+
+main > div > div h3 {
+    padding-left: calc(var(--golden-width-eighth) / var(--phi));
+}
+
+main > div > section div form {
+    margin: 0 auto;
 }
 
 footer {
@@ -237,7 +306,7 @@ footer {
     box-sizing: border-box;
     background: var(--footer-bg);
     border-top: 1px solid var(--grey);
-    background: linear-gradient(to bottom right, var(--glass-dark), var(--bg-1));
+    background: var(--footer-bg);
     animation: alt-sync-in .36s ease-in;
     animation-delay: .48s;
     animation-fill-mode: forwards;
@@ -381,12 +450,7 @@ footer a[title="twitter"]:hover {
 .no-delay { animation-delay: -.2s !important; }
 .no-delay > * { animation-delay: 0.12s !important; }
 
-.flex-one, .flex-two, .flex-three {
-    display: flex;
-}
-
-.flex-three > div {
-    flex: 0.333;
-}
+.flex-one, .flex-two, .flex-three { display: flex; }
+.flex-three > div { flex: 0.333; }
 
 :focus { outline: none !important; }

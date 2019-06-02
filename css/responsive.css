@@ -112,7 +112,6 @@
         height: 42px;
         width: 42px;
         border: 1px solid var(--fg-2);
-        /* background: linear-gradient(36deg, var(--bg-color-2), var(--bg-color-3)); */
         display: flex;
         flex-flow: column nowrap;
         z-index: 11;
@@ -138,9 +137,7 @@
         transition: .24s linear all;
     }
 
-    body > input:checked:focus {
-        outline: none;
-    }
+    body > input:checked:focus { outline: none; }
 
     body > input:checked:before {
         color: var(--brand-1);
