@@ -201,6 +201,18 @@
         height: calc(100vh - var(--golden-height-second));
         margin: var(--golden-height-seventh) var(--golden-width-sixth);
         margin-bottom: calc(var(--golden-height-third) + var(--golden-height-seventh));
+        overflow-y: scroll;
+    }
+
+    main div {
+        display: auto !important;
+        /* flex-flow: column nowrap; */
+    }
+
+    main > div > section {
+        width: 100%;
+        height: var(--golden-height-third);
+        margin-bottom: 12px;
     }
 
     main ul {
@@ -241,18 +253,18 @@
         width: 32px;
     }
 
-    footer > div:nth-child(1) { 
+    footer > div:nth-child(1) {
         flex: 1;
         padding: 2px var(--golden-width-sixth);
     }
 
-    footer > div:nth-child(2) { 
+    footer > div:nth-child(2) {
        flex: 0;
        overflow: hidden; 
        opacity: 0;
     }
 
-    input:checked ~ footer > div:nth-child(1) { 
+    input:checked ~ footer > div:nth-child(1) {
         flex: var(--golden-flex-first);
     }
 
