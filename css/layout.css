@@ -140,8 +140,8 @@ h3, h4 {
 
 h3 {
     font-size: var(--h2-root);
-    margin-top: var(--golden-height-eighth);
-    margin-bottom: var(--golden-height-eighth);
+    /* margin-top: var(--golden-height-eighth);
+    margin-bottom: var(--golden-height-eighth); */
     color: var(--brand-1);
 }
 
