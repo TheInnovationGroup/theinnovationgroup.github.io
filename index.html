@@ -42,18 +42,19 @@
     </header>
   
     <nav>
+        <button name="home">Home</button>
         <button name="about">About</button>
         <!-- <button name="news">News</button> -->
         <button name="tools">Tools</button>
         <!-- <button name="services">Services</button> -->
         <!-- <button name="resources">Resources</button> -->
-        <button name="showcase">Showcase</button>
+        <button name="portfolio">Portfolio</button>
         <!-- <button name="contact">Profile</button> -->
     </nav>
 
-    <main name="about">
+    <main name="home">
 
-        <h2>About The Innovation Group</h2>
+        <h2>The Innovation Group</h2>
         <div>
             <section>
                 <h3>R&D / Training / Education</h3>
@@ -102,6 +103,12 @@
         <!-- <p>Welcome and thank you for visiting our site.</p>
         <p>Here, you can learn about The Innovation Group and what we do, and find useful information about software, security, production, and more.</p>
         <p>This site is currently under development so check back periodically for updates.</p> -->
+    </main>
+
+    <main name="about" class="hidden">
+        <h2>About Us</h2>
+        <p>The Innovation Group performs in-house software R&D to produce educational materials based on open-source tools, and to provide high-value consulting to solve challenging business and technical problems. </p>
+        <p>We are comfortable with anything from small MVPs to large-scale datasets and production systems serving millions of people. We produce clean and simple designs along with ultra-fast and reliable system architecture and services, based on known best practices and state-of-the-art technology.</p>
     </main>
 
     <main name="news" class="hidden">
@@ -179,11 +186,46 @@
         <p>This section is under development - check back soon for resources such as articles, tools, downloads, and more.</p>
     </main>
 
-    <main name="showcase" class="hidden">
-        <h2>Showcase</h2>
-        <p>Check out the source code of this website <a href="https://github.com/TheInnovationGroup/theinnovationgroup.github.io">here</a> for a look into how we build things.</p>
-        <p>This website was built entirely from scratch using the latest features available in pure HTML5, CSS3, and JavaScript, with no additional framworks, libraries, or plugins.</p>
-        <p>Screen metrics are calculated on-the-fly by applying geometric math to the exact current height and width of the screen, resulting in components that fit perfectly in proportion to each other along known-good lines - completely eliminating the usual guesswork and bolt-on junk associated with responsive web design.</p>
+    <main name="portfolio" class="hidden">
+        <h2>Portfolio</h2>
+        
+        <section>
+            <h3>Check out our work</h3>
+            <p>Here are a few of our recent projects and articles:</p>
+        </section>
+
+        <section>
+            <img src="images/portfolio/prezence.png" />
+            <h3>Prezence</h3>
+            <p>Prezence is a simple open-source meditation app built with Dart, Flutter, PostgreSQL and Heroku.</p>
+            <a href="https://prezence.github.io/">website</a>
+            <a href="https://github.com/Prezence">source</a>
+        </section>
+       
+        <section>
+            <img src="images/portfolio/paintbros.png" />
+            <h3>Paintbros</h3>
+            <p>Paintbros is an ultra-simple raster graphics paint program build in HTML5, CSS3, and TypeScript.</p>
+            <a href="https://kenreilly.github.io/paintbros/">live demo</a>
+            <a href="https://github.com/kenreilly/paintbros">source</a>
+            <a href="https://itnext.io/building-a-paint-app-in-typescript-1ce42c5b1698">tutorial</a>
+        </section>
+
+        <section>
+            <img src="images/portfolio/bytes.png" />
+            <h3>Bytes</h3>
+            <p>Bytes is a version of the classic retro snake game built in HTML5, CSS3, and TypeScript.</p>
+            <a href="https://bytegames.github.io/bytes/">live demo</a>
+            <a href="https://github.com/bytegames/bytes">source</a>
+            <a href="https://itnext.io/build-a-snake-game-in-typescript-8bee5b9f1ec6">tutorial</a>
+        </section>
+        
+        <section>
+            <h3>Our Website</h3>
+            <p>Check out the source code of this website <a href="https://github.com/TheInnovationGroup/theinnovationgroup.github.io">here</a> for a look into how we build things.</p>
+            <p>This website was built entirely from scratch using the latest features available in pure HTML5, CSS3, and JavaScript, with no additional framworks, libraries, or plugins.</p>
+            <p>Screen metrics are calculated on-the-fly by applying geometric math to the exact current height and width of the screen, resulting in components that fit perfectly in proportion to each other along known-good lines - completely eliminating the usual guesswork and bolt-on junk associated with responsive web design.</p>
+        </section>
     </main>
     
     <main name="contact" class="hidden">

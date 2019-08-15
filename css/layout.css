@@ -207,7 +207,6 @@ main > :not(h2) {
 main > div ~ div { margin-top: 18px; }
 
 main a {
-    padding: 0;
     line-height: 16pt;
     font-size: 12pt;
     font-family: 'fira-sans';
@@ -289,6 +288,19 @@ main > div > div h3 {
 main > div > section div form {
     margin: 0 auto;
 }
+
+main > section {
+    margin: 10px 0;
+    background: var(--glass-dark);
+    padding: 20px;
+}
+
+main > section > img {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+main > section > a { display: block; }
 
 footer {
     opacity: 0;
