@@ -45,7 +45,7 @@ nav {
     --margin-base: var(--golden-height-sixth);
     --flex-base: calc(1 - (1 / var(--phi)));
     opacity: 0;
-    height: 0vh;
+    height: var(--main-height);
     display: flex;
     flex: var(--golden-flex-third);
     flex-flow: column nowrap;
@@ -110,7 +110,7 @@ h1 {
     opacity: 0;
     font-weight: 200;
     margin-left: var(--h1-root);
-    margin-top: var(--golden-height-sixth);
+    margin-top: var(--h1-root);
     font-size: var(--h1-root);
     line-height: var(--h1-root);
     /* text-shadow: -1px 1px var(--glass-lite); */
@@ -178,7 +178,7 @@ main {
     opacity: 0;
     --margin-base: var(--golden-height-sixth);
     flex: calc(var(--golden-flex-first) + var(--golden-flex-fifth));
-    height: var(--golden-height-first);
+    height: var(--main-height);
     margin-left: var(--margin-base);
     margin-top: var(--margin-base);
     border-top: 1px solid var(--grey);

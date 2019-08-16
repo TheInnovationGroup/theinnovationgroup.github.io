@@ -23,7 +23,7 @@
 @keyframes v-drop-in {
 	0% { height: 0vh; opacity: 0; }
 	50% { opacity: 1; }
-	100% { height: var(--golden-height-first); opacity: 1; }
+	100% { height: var(--main-height); opacity: 1; }
 }
 
 @keyframes sync-in {
@@ -41,7 +41,7 @@
 	100% {
 		opacity: 1;
 		transform: ScaleX(1);
-		height: var(--golden-height-first);
+		height: var(--main-height);
 	}
 }
 
@@ -49,7 +49,7 @@
 	0% {
 		opacity: 1;
 		transform: ScaleX(1);
-		height: var(--golden-height-first);
+		height: var(--main-height);
 	}
 	64% {
 		opacity: 0;

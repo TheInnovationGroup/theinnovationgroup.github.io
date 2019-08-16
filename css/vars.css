@@ -29,9 +29,11 @@
     --golden-flex-fifth: calc(var(--golden-flex-fourth) / var(--phi));
     --golden-flex-sixth: calc(var(--golden-flex-fourth) - var(--golden-flex-third));
 
-    --header-root: var(--golden-height-fourth);
-    --h1-root: var(--golden-height-sixth);
+    --header-root: var(--golden-height-fifth);
+    --h1-root: var(--golden-height-seventh);
     --h2-root: var(--golden-height-eighth);
+
+    --main-height: calc(var(--golden-height-first) + var(--golden-height-sixth));
 
     --footer-root: var(--golden-height-fourth);
     --padding-base: 32px;
