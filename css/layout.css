@@ -13,6 +13,8 @@ body {
     font-family: 'fira-sans';
 }
 
+body > div { padding: 0 10%; }
+
 header {
     background: var(--header-bg);
     border-bottom: 1px solid var(--brand-2);
@@ -166,7 +168,7 @@ ul {
     list-style-type: none;
 }
 
-ul > li {
+ul > li, ol > li {
     font-family: 'fira-sans';
     font-weight: 200;
     font-size: var(--golden-height-eighth);
